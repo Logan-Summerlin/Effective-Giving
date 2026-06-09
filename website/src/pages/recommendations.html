@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recommendations — ClearView</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">Clear<span>View</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="recommendations.html" class="active">Recommendations</a>
+      <a href="cause-areas/index.html">Cause Areas</a>
+      <a href="methodology.html">Methodology</a>
+      <a href="corrections.html">Corrections</a>
+      <a href="sources.html">Sources</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Main -->
+<main class="page">
+
+  <!-- Placeholder Notice -->
+  <div class="placeholder-notice">
+    <span class="icon">⚠</span>
+    <p><strong>This page contains illustrative placeholder content only.</strong> No real charity evaluations have been conducted yet. All charity names, locations, ratings, evidence grades, and descriptions shown below are invented examples for design and layout purposes. Do not make any donation decisions based on anything displayed on this page.</p>
+  </div>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1>Recommendations</h1>
+    <p>Charities most likely to turn your next donated dollar into real social benefit.</p>
+  </div>
+
+  <!-- Filter Bar -->
+  <div class="filter-bar">
+    <div class="filter-group">
+      <label class="filter-label" for="filter-cause">Cause Area</label>
+      <select class="filter-select" id="filter-cause">
+        <option value="">All</option>
+        <option value="homelessness">Homelessness</option>
+        <option value="criminal-recidivism">Criminal Recidivism</option>
+        <option value="criminal-justice">Criminal Justice</option>
+        <option value="legal-immigrants">Legal Immigrants</option>
+        <option value="drug-addiction">Drug Addiction</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label class="filter-label" for="filter-evidence">Evidence Strength</label>
+      <select class="filter-select" id="filter-evidence">
+        <option value="">All</option>
+        <option value="strong">Strong</option>
+        <option value="moderate">Moderate</option>
+        <option value="promising">Promising</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label class="filter-label" for="filter-category">Recommendation Category</label>
+      <select class="filter-select" id="filter-category">
+        <option value="">All</option>
+        <option value="top">Top Charities</option>
+        <option value="uncertain">Promising but Uncertain</option>
+        <option value="policy">Policy-Leverage</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label class="filter-label" for="filter-state">State</label>
+      <select class="filter-select" id="filter-state">
+        <option value="">All</option>
+        <option value="CA">California</option>
+        <option value="IL">Illinois</option>
+        <option value="NY">New York</option>
+        <option value="PA">Pennsylvania</option>
+        <option value="TX">Texas</option>
+        <option value="WA">Washington</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label class="filter-label" for="filter-search">Search</label>
+      <div class="search-wrap" style="margin-bottom: 0;">
+        <span class="search-icon">🔍</span>
+        <input
+          class="search-input filter-input"
+          id="filter-search"
+          type="search"
+          placeholder="Charity name or keyword…"
+          style="min-width: 200px; padding-left: 32px;"
+        />
+      </div>
+    </div>
+    <span class="filter-note">Filters are illustrative — no real data is loaded yet.</span>
+  </div>
+
+  <!-- ── Section 1: Top Charities ──────────────────────────── -->
+  <section class="section">
+    <div class="section-title">Top Charities</div>
+    <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 24px; max-width: 68ch;">
+      Organizations with strong evidence, meaningful room for more funding, and cost-effectiveness estimates placing them among the highest-impact options in their cause area.
+    </p>
+    <div class="card-grid">
+
+      <a href="charities/example-charity.html" class="card card-link">
+        <div class="charity-card">
+          <div class="charity-card-top">
+            <div>
+              <div class="charity-card-name">
+                Placeholder Reentry Works
+                <span class="placeholder-tag">Placeholder</span>
+              </div>
+              <div class="charity-card-location">Chicago, IL · National</div>
+            </div>
+            <span class="badge badge-green">Top Charity</span>
+          </div>
+          <p class="charity-card-desc">Provides transitional employment, housing support, and cognitive-behavioral therapy for people leaving state and federal incarceration. Replicated RCT evidence across four U.S. cities shows sustained reductions in rearrest at two years post-release.</p>
+          <div class="charity-card-footer">
+            <span class="evidence-grade grade-strong"><span class="grade-dot"></span>Strong Evidence</span>
+            <span class="tag">Criminal Recidivism</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="charities/example-charity.html" class="card card-link">
+        <div class="charity-card">
+          <div class="charity-card-top">
+            <div>
+              <div class="charity-card-name">
+                Placeholder Housing First Coalition
+                <span class="placeholder-tag">Placeholder</span>
+              </div>
+              <div class="charity-card-location">Seattle, WA · Regional</div>
+            </div>
+            <span class="badge badge-green">Top Charity</span>
+          </div>
+          <p class="charity-card-desc">Delivers permanent supportive housing with intensive on-site case management to chronically unhoused individuals. Multiple independent evaluations confirm stable housing retention rates above 80% at one year.</p>
+          <div class="charity-card-footer">
+            <span class="evidence-grade grade-strong"><span class="grade-dot"></span>Strong Evidence</span>
+            <span class="tag">Homelessness</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="charities/example-charity.html" class="card card-link">
+        <div class="charity-card">
+          <div class="charity-card-top">
+            <div>
+              <div class="charity-card-name">
+                Placeholder Public Defense Fund
+                <span class="placeholder-tag">Placeholder</span>
+              </div>
+              <div class="charity-card-location">New York, NY · Statewide</div>
+            </div>
+            <span class="badge badge-green">Top Charity</span>
+          </div>
+          <p class="charity-card-desc">Funds and trains public defenders handling felony cases for low-income clients, reducing pre-trial detention and sentence lengths. Quasi-experimental studies show measurable reductions in incarceration days per case at modest cost per outcome.</p>
+          <div class="charity-card-footer">
+            <span class="evidence-grade grade-strong"><span class="grade-dot"></span>Strong Evidence</span>
+            <span class="tag">Criminal Justice</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ── Section 2: Strong but Funding-Constrained ────────── -->
+  <section class="section">
+    <div class="section-title">Strong but Funding-Constrained</div>
+    <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 24px; max-width: 68ch;">
+      High-quality programs with strong evidence that currently operate below capacity — additional donations are likely to directly expand service delivery rather than sit unused.
+    </p>
+    <div class="card-grid">
+
+      <a href="charities/example-charity.html" class="card card-link">
+        <div class="charity-card">
+          <div class="charity-card-top">
+            <div>
+              <div class="charity-card-name">
+                Placeholder MAT Access Project
+                <span class="placeholder-tag">Placeholder</span>
+              </div>
+              <div class="charity-card-location">Philadelphia, PA · Regional</div>
+            </div>
+            <span class="badge badge-teal">Funding-Constrained</span>
+          </div>
+          <p class="charity-card-desc">Subsidizes medication-assisted treatment (buprenorphine) for uninsured adults with opioid use disorder, with peer-navigator support through the first year of recovery. Currently turns away roughly one in three applicants due to capacity limits.</p>
+          <div class="charity-card-footer">
+            <span class="evidence-grade grade-strong"><span class="grade-dot"></span>Strong Evidence</span>
+            <span class="tag">Drug Addiction</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="charities/example-charity.html" class="card card-link">
+        <div class="charity-card">
+          <div class="charity-card-top">
+            <div>
+              <div class="charity-card-name">
+                Placeholder Immigrant Legal Aid
+                <span class="placeholder-tag">Placeholder</span>
+              </div>
+              <div class="charity-card-location">Los Angeles, CA · Statewide</div>
+            </div>
+            <span class="badge badge-teal">Funding-Constrained</span>
+          </div>
+          <p class="charity-card-desc">Provides free naturalization application support and immigration court representation to low-income lawful permanent residents. Strong evidence that legal representation dramatically improves case outcomes, and a multi-year waitlist documents unmet demand.</p>
+          <div class="charity-card-footer">
+            <span class="evidence-grade grade-moderate"><span class="grade-dot"></span>Moderate Evidence</span>
+            <span class="tag">Legal Immigrants</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ── Section 3: Promising but Uncertain ───────────────── -->
+  <section class="section">
+    <div class="section-title">Promising but Uncertain</div>
+    <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 24px; max-width: 68ch;">
+      Organizations running interventions with plausible mechanisms and early positive results, but where evidence is not yet strong enough to make a confident cost-effectiveness estimate.
+    </p>
+    <div class="card-grid">
+
+      <a href="charities/example-charity.html" class="card card-link">
+        <div class="charity-card">
+          <div class="charity-card-top">
+            <div>
+              <div class="charity-card-name">
+                Placeholder Peer Navigator Network
+                <span class="placeholder-tag">Placeholder</span>
+              </div>
+              <div class="charity-card-location">Houston, TX · City-wide</div>
+            </div>
+            <span class="badge badge-yellow">Promising</span>
+          </div>
+          <p class="charity-card-desc">Embeds trained peer navigators with lived experience of homelessness in emergency rooms to connect patients with housing services before discharge. Single pre-post study shows strong housing placement rates; randomized evaluation underway.</p>
+          <div class="charity-card-footer">
+            <span class="evidence-grade grade-promising"><span class="grade-dot"></span>Promising Evidence</span>
+            <span class="tag">Homelessness</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="charities/example-charity.html" class="card card-link">
+        <div class="charity-card">
+          <div class="charity-card-top">
+            <div>
+              <div class="charity-card-name">
+                Placeholder Record Clear Initiative
+                <span class="placeholder-tag">Placeholder</span>
+              </div>
+              <div class="charity-card-location">Detroit, MI · Statewide</div>
+            </div>
+            <span class="badge badge-yellow">Promising</span>
+          </div>
+          <p class="charity-card-desc">Provides free expungement and record-clearing legal services to individuals with older, low-level convictions that block employment and housing access. Observational data suggests significant wage gains after record clearing; causal evidence is limited.</p>
+          <div class="charity-card-footer">
+            <span class="evidence-grade grade-promising"><span class="grade-dot"></span>Promising Evidence</span>
+            <span class="tag">Criminal Justice</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="charities/example-charity.html" class="card card-link">
+        <div class="charity-card">
+          <div class="charity-card-top">
+            <div>
+              <div class="charity-card-name">
+                Placeholder New Arrival Welcome Center
+                <span class="placeholder-tag">Placeholder</span>
+              </div>
+              <div class="charity-card-location">Miami, FL · Regional</div>
+            </div>
+            <span class="badge badge-yellow">Promising</span>
+          </div>
+          <p class="charity-card-desc">Offers English instruction, credential-recognition coaching, and employment connections for recently arrived legal immigrants and refugees. Program theory is well-supported; rigorous outcome data are not yet available from this specific provider.</p>
+          <div class="charity-card-footer">
+            <span class="evidence-grade grade-promising"><span class="grade-dot"></span>Promising Evidence</span>
+            <span class="tag">Legal Immigrants</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ── Section 4: Policy-Leverage Opportunities ─────────── -->
+  <section class="section">
+    <div class="section-title">Policy-Leverage Opportunities</div>
+    <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 24px; max-width: 68ch;">
+      Advocacy and reform organizations where marginal donations may influence policy changes with high potential social impact — though the causal path from donation to outcome is longer and less certain than direct-service giving.
+    </p>
+    <div class="card-grid">
+
+      <a href="charities/example-charity.html" class="card card-link">
+        <div class="charity-card">
+          <div class="charity-card-top">
+            <div>
+              <div class="charity-card-name">
+                Placeholder Bail Reform Alliance
+                <span class="placeholder-tag">Placeholder</span>
+              </div>
+              <div class="charity-card-location">Washington, DC · National</div>
+            </div>
+            <span class="badge badge-blue">Policy-Leverage</span>
+          </div>
+          <p class="charity-card-desc">Advances evidence-based pretrial reform legislation at the state level, targeting cash-bail systems that disproportionately detain low-income defendants awaiting trial. Past campaigns have contributed to reforms affecting hundreds of thousands of cases annually.</p>
+          <div class="charity-card-footer">
+            <span class="evidence-grade grade-moderate"><span class="grade-dot"></span>Moderate Evidence</span>
+            <span class="tag">Criminal Justice</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="charities/example-charity.html" class="card card-link">
+        <div class="charity-card">
+          <div class="charity-card-top">
+            <div>
+              <div class="charity-card-name">
+                Placeholder Housing Policy Institute
+                <span class="placeholder-tag">Placeholder</span>
+              </div>
+              <div class="charity-card-location">Sacramento, CA · Statewide</div>
+            </div>
+            <span class="badge badge-blue">Policy-Leverage</span>
+          </div>
+          <p class="charity-card-desc">Produces and disseminates rigorous research on zoning reform, housing voucher expansion, and shelter policy, with a track record of directly influencing state legislation. Impact per dollar is highly uncertain but potentially very large if key bills pass.</p>
+          <div class="charity-card-footer">
+            <span class="evidence-grade grade-promising"><span class="grade-dot"></span>Promising Evidence</span>
+            <span class="tag">Homelessness</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-copy">ClearView — U.S. Charity Effectiveness · This site is a template under development. No real evaluations have been published.</span>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="cause-areas/index.html">Cause Areas</a>
+      <a href="methodology.html">Methodology</a>
+      <a href="corrections.html">Corrections</a>
+      <a href="sources.html">Sources</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

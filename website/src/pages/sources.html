@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sources &amp; Downloads — ClearView</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">Clear<span>View</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="recommendations.html">Recommendations</a>
+      <a href="cause-areas/index.html">Cause Areas</a>
+      <a href="methodology.html">Methodology</a>
+      <a href="corrections.html">Corrections</a>
+      <a href="sources.html" class="active">Sources</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Main -->
+<main class="page">
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1>Sources &amp; Downloads</h1>
+    <p>Primary data sources used in evaluations, with retrieval notes and access instructions.</p>
+  </div>
+
+  <!-- Placeholder Notice -->
+  <div class="placeholder-notice">
+    <span class="icon">⚠</span>
+    <p><strong>This page is a template under active development.</strong> No evaluations have been published yet. The source registry CSV and all downloads listed below will be made available once charity evaluations go live. Source descriptions reflect data we intend to use and are provided for transparency, not as a claim that analysis is complete.</p>
+  </div>
+
+  <!-- Primary Data Sources -->
+  <section class="section">
+    <div class="section-title">Primary Data Sources</div>
+
+    <!-- 1. IRS Exempt Organizations Database -->
+    <div class="source-item">
+      <div class="source-name">IRS Exempt Organizations Database</div>
+      <div class="source-meta">
+        <span class="tag">Government Registry</span>
+        <span class="badge badge-teal">Public Download</span>
+      </div>
+      <div class="source-desc">
+        The IRS publishes the full list of organizations recognized as tax-exempt under Section 501(c) of the Internal Revenue Code. This database provides each organization's Employer Identification Number (EIN), legal name, address, subsection code, ruling date, and exempt purpose codes. It is the authoritative starting point for identifying which organizations are registered charities, confirming their legal status, and obtaining the EINs needed to retrieve further filings. Available as bulk data extracts at <a href="https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf" target="_blank" rel="noopener">irs.gov</a>.
+      </div>
+    </div>
+
+    <!-- 2. IRS Form 990 Filings -->
+    <div class="source-item">
+      <div class="source-name">IRS Form 990 Filings</div>
+      <div class="source-meta">
+        <span class="tag">Tax Filing</span>
+        <span class="badge badge-teal">Public</span>
+      </div>
+      <div class="source-desc">
+        Most tax-exempt organizations with annual gross receipts above $50,000 must file Form 990 (or 990-EZ / 990-PF for private foundations) annually with the IRS. These filings report revenue, expenses, executive compensation, program service accomplishments, governance policies, and related-party transactions. The IRS makes machine-readable 990 data available via the <a href="https://aws.amazon.com/opendata/public-datasets/" target="_blank" rel="noopener">AWS Open Data Registry</a>. Form 990s are the primary source for financial transparency analysis — however, they report what money was spent on, not what outcomes were achieved.
+      </div>
+    </div>
+
+    <!-- 3. ProPublica Nonprofit Explorer -->
+    <div class="source-item">
+      <div class="source-name">ProPublica Nonprofit Explorer</div>
+      <div class="source-meta">
+        <span class="tag">Aggregated Public Data</span>
+        <span class="badge badge-blue">API + Web</span>
+      </div>
+      <div class="source-desc">
+        ProPublica's <a href="https://projects.propublica.org/nonprofits/" target="_blank" rel="noopener">Nonprofit Explorer</a> provides a searchable interface and public API for IRS Form 990 data going back to approximately 2012. The API returns structured JSON for individual organizations and supports bulk lookups by EIN. It is particularly useful for retrieving recent 990 data before the IRS bulk extracts are updated, and for surfacing PDFs of original filings. Usage is subject to ProPublica's API terms of service; no registration is required for moderate query volumes.
+      </div>
+    </div>
+
+    <!-- 4. Candid / GuideStar -->
+    <div class="source-item">
+      <div class="source-name">Candid / GuideStar</div>
+      <div class="source-meta">
+        <span class="tag">Nonprofit Database</span>
+        <span class="badge badge-yellow">Subscription (limited free)</span>
+      </div>
+      <div class="source-desc">
+        Candid (formerly GuideStar) aggregates IRS filings alongside charity-submitted profiles, program descriptions, leadership information, seal-of-transparency ratings, and grant data from the Foundation Directory. The free tier provides basic organizational profiles; deeper financial history, grantee data, and API access require a paid subscription. Candid data may supplement 990 analysis with self-reported program narratives, but self-reported content is treated with lower confidence than audited financials or independent evidence. Access and licensing terms must be reviewed before bulk extraction.
+      </div>
+    </div>
+
+    <!-- 5. State Charity Registries -->
+    <div class="source-item">
+      <div class="source-name">State Charity Registries</div>
+      <div class="source-meta">
+        <span class="tag">State Government</span>
+        <span class="badge badge-gray">Varies by State</span>
+      </div>
+      <div class="source-desc">
+        Most U.S. states require charities that solicit donations from residents to register with the state attorney general or a designated charity bureau, and to file annual renewal reports including audited financial statements and sometimes program narratives not required by the IRS. These registries are especially useful for charities operating below the IRS 990 disclosure threshold, for obtaining audited financial statements where the charity has not published them independently, and for identifying registration lapses or compliance actions. Access methods, data formats, and public availability vary significantly by state; some states provide bulk data downloads while others require case-by-case web requests.
+      </div>
+    </div>
+
+    <!-- 6. Audited Financial Statements -->
+    <div class="source-item">
+      <div class="source-name">Audited Financial Statements</div>
+      <div class="source-meta">
+        <span class="tag">Charity-Published</span>
+        <span class="badge badge-gray">Varies</span>
+      </div>
+      <div class="source-desc">
+        Charities with sufficiently large budgets, or those receiving federal grants above specified thresholds, are required to commission independent audits of their financial statements. Audited statements provide a higher level of assurance than unaudited 990 data and typically include notes on accounting policies, significant estimates, related-party relationships, and — for federal grant recipients — findings from single audits under the Uniform Guidance. When available, audited statements are used to verify or adjust figures from 990 filings. Charities often publish audited statements on their own websites or through state charity registries; where neither source has them, we request them directly and record the outcome.
+      </div>
+    </div>
+
+  </section>
+
+  <hr class="divider" />
+
+  <!-- Source Registry -->
+  <section class="section">
+    <div class="section-title">Source Registry</div>
+
+    <div class="notice notice-info" style="margin-bottom: 20px;">
+      <strong>Every source used in a published evaluation is recorded in <code>source_registry.csv</code>.</strong> Each row captures: source name, URL, retrieval date, access method, license or usage notes, fields extracted, known limitations, and parsing confidence. This registry is published alongside evaluations to ensure full reproducibility. It is updated whenever new data is retrieved or a previously used source changes.
+    </div>
+
+    <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
+      <a class="btn btn-secondary" style="opacity: 0.45; cursor: not-allowed; pointer-events: none;" aria-disabled="true">
+        ↓ Download source_registry.csv
+      </a>
+      <span style="font-size: 0.8rem; color: var(--text-tertiary);">Available when evaluations are published</span>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- Downloads -->
+  <section class="section">
+    <div class="section-title">Downloads</div>
+
+    <p style="margin-bottom: 24px; font-size: 0.875rem; color: var(--text-secondary);">
+      Processed datasets and model files will be published here when evaluations go live. All downloads will include a data dictionary, version number, and retrieval timestamp.
+    </p>
+
+    <!-- Download Row 1 -->
+    <div style="
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 20px; gap: 16px; flex-wrap: wrap;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); margin-bottom: 10px;
+      opacity: 0.5;
+    ">
+      <div style="display: flex; flex-direction: column; gap: 3px;">
+        <span style="font-weight: 600; font-size: 0.9rem;">Full Charity Database</span>
+        <span style="font-size: 0.78rem; color: var(--text-tertiary);">CSV · All evaluated charities with financial fields, evidence grades, and cost-effectiveness estimates</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 10px; flex-shrink: 0;">
+        <span class="tag">CSV</span>
+        <a class="btn btn-secondary btn-sm" style="cursor: not-allowed; pointer-events: none;" aria-disabled="true">Not yet available</a>
+      </div>
+    </div>
+
+    <!-- Download Row 2 -->
+    <div style="
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 20px; gap: 16px; flex-wrap: wrap;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); margin-bottom: 10px;
+      opacity: 0.5;
+    ">
+      <div style="display: flex; flex-direction: column; gap: 3px;">
+        <span style="font-weight: 600; font-size: 0.9rem;">Cost-Effectiveness Model</span>
+        <span style="font-size: 0.78rem; color: var(--text-tertiary);">XLSX · Spreadsheet model with assumptions, uncertainty ranges, moral weights, and sensitivity analysis tabs</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 10px; flex-shrink: 0;">
+        <span class="tag">XLSX</span>
+        <a class="btn btn-secondary btn-sm" style="cursor: not-allowed; pointer-events: none;" aria-disabled="true">Not yet available</a>
+      </div>
+    </div>
+
+    <!-- Download Row 3 -->
+    <div style="
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 20px; gap: 16px; flex-wrap: wrap;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); margin-bottom: 10px;
+      opacity: 0.5;
+    ">
+      <div style="display: flex; flex-direction: column; gap: 3px;">
+        <span style="font-weight: 600; font-size: 0.9rem;">Evidence Map Summary</span>
+        <span style="font-size: 0.78rem; color: var(--text-tertiary);">PDF · Overview of intervention evidence across all cause areas: grades, key studies, effect sizes, and caveats</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 10px; flex-shrink: 0;">
+        <span class="tag">PDF</span>
+        <a class="btn btn-secondary btn-sm" style="cursor: not-allowed; pointer-events: none;" aria-disabled="true">Not yet available</a>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-copy">ClearView — U.S. Charity Effectiveness · This site is a template under development. No real evaluations have been published.</span>
+    <div class="footer-links">
+      <a href="methodology.html">Methodology</a>
+      <a href="corrections.html">Corrections</a>
+      <a href="sources.html">Sources</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

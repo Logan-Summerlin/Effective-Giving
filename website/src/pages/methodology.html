@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Methodology — ClearView</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    /* ── Methodology-specific additions ──────────────────────── */
+
+    /* Evidence grade rows in the grading section */
+    .grade-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .grade-row:last-child { border-bottom: none; }
+
+    .grade-row-indicator {
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+    .grade-row-label {
+      font-size: 0.875rem;
+      font-weight: 600;
+      min-width: 180px;
+      flex-shrink: 0;
+      color: var(--text);
+    }
+    .grade-row-desc {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      max-width: none;
+    }
+
+    /* dot sizes for grade rows (slightly larger than card dots) */
+    .grade-dot-lg {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+    .dot-green   { background: #059669; }
+    .dot-blue    { background: #2563eb; }
+    .dot-amber   { background: #d97706; }
+    .dot-gray    { background: #6b7280; }
+    .dot-red     { background: #dc2626; }
+
+    /* Recommendation category cards */
+    .rec-category-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .rec-category-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 18px 22px;
+      border-bottom: 1px solid var(--border-light);
+      background: var(--surface);
+    }
+    .rec-category-item:last-child { border-bottom: none; }
+    .rec-category-badge { flex-shrink: 0; min-width: 0; }
+    .rec-category-body {}
+    .rec-category-name {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: var(--text);
+    }
+    .rec-category-desc {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      max-width: none;
+    }
+
+    /* Funding levels row */
+    .funding-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin: 20px 0;
+    }
+    .funding-cell {
+      background: var(--surface);
+      padding: 16px 18px;
+    }
+    .funding-amount {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 5px;
+    }
+    .funding-desc {
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* Intro prose spacing */
+    .prose p {
+      margin-bottom: 1em;
+      font-size: 0.9375rem;
+      line-height: 1.75;
+      color: var(--text);
+      max-width: 68ch;
+    }
+    .prose p:last-child { margin-bottom: 0; }
+
+    /* Details override for governance — no bottom border on last item in a group */
+    .details-group { margin-top: 16px; }
+    .details-group details:last-child { margin-bottom: 0; }
+    .details-body p {
+      margin-bottom: 0.85em;
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      max-width: 68ch;
+    }
+    .details-body p:last-child { margin-bottom: 0; }
+
+    /* Transparency two-column */
+    .transparency-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .transparency-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px 22px;
+    }
+    .transparency-card-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+    .transparency-card p {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      max-width: none;
+      margin-bottom: 0.75em;
+    }
+    .transparency-card p:last-child { margin-bottom: 0; }
+
+    @media (max-width: 640px) {
+      .grade-row { flex-wrap: wrap; }
+      .grade-row-label { min-width: 100%; }
+      .transparency-grid { grid-template-columns: 1fr; }
+      .rec-category-item { flex-direction: column; gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">Clear<span>View</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="recommendations.html">Recommendations</a>
+      <a href="cause-areas/index.html">Cause Areas</a>
+      <a href="methodology.html" class="active">Methodology</a>
+      <a href="corrections.html">Corrections</a>
+      <a href="sources.html">Sources</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Main -->
+<main class="page">
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1>Methodology</h1>
+    <p>How ClearView evaluates charities, grades evidence, and estimates cost-effectiveness.</p>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- 1. Our Central Question -->
+  <section class="section">
+    <div class="section-title">Our Central Question</div>
+    <div class="prose">
+      <p>Most charity evaluators ask whether an organization does good work. ClearView asks a sharper question: what does your <em>next donated dollar</em> actually accomplish? This distinction matters more than it might seem. A charity can run excellent programs, have strong leadership, and spend efficiently on overhead, yet still offer low marginal impact to a new donor — because it already has all the funding it needs, because its core model does not scale, or because the cause area is already well-resourced by government or philanthropy.</p>
+      <p>The concept we focus on is <strong>marginal impact</strong>: the additional good produced by an incremental donation, net of what would have happened anyway. This is different from total impact, which measures everything a charity has ever accomplished. A charity that raised $50 million and served tens of thousands of people may have had enormous total impact while offering almost nothing to a donor making a $500 contribution today, if that organization's current programs are at capacity, if it has a funding surplus, or if its interventions would occur regardless of whether new dollars arrive.</p>
+      <p>Answering the marginal question rigorously requires analyzing room for more funding, understanding how new money is actually used at the margin, identifying whether bottlenecks are financial or operational, and checking whether additional donations displace or supplement other funding sources. These are harder questions than "is this organization reputable?" — but they are the right questions for a donor who wants their contribution to count.</p>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- 2. What We Evaluate -->
+  <section class="section">
+    <div class="section-title">What We Evaluate</div>
+    <div class="feature-row">
+
+      <div class="feature-item">
+        <div class="feature-label">Marginal Impact</div>
+        <p class="feature-text">We analyze how additional donations would be used at the margin — not what a charity has done historically. This includes assessing room for more funding, operational capacity, current funding levels, and whether bottlenecks are financial or structural.</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-label">Evidence Quality</div>
+        <p class="feature-text">We grade the evidence base for each intervention type on a seven-point spectrum from Strong to Potentially Harmful. Grading considers causal identification, replication quality, U.S. applicability, effect size, and risk of harm.</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-label">Cost-Effectiveness</div>
+        <p class="feature-text">We estimate expected social benefit per marginal dollar using explicit assumptions, moral weights, and uncertainty ranges. Human welfare benefits are reported separately from government fiscal savings so donors can apply their own values.</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-label">Financial Transparency</div>
+        <p class="feature-text">We assess how completely and accessibly a charity discloses its finances: audited statements, Form 990 availability, revenue breakdown, program vs. administrative spending, and executive compensation disclosures.</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-label">Impact Transparency</div>
+        <p class="feature-text">We assess whether a charity clearly reports what it does, how many people it serves, and whether its programs produce the outcomes claimed. A charity can have complete financial disclosure while providing almost no evidence about whether its work improves lives.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- 3. Evidence Grading -->
+  <section class="section">
+    <div class="section-title">Evidence Grading</div>
+    <div class="prose">
+      <p>We grade the evidence base for each <em>intervention type</em> — not for an individual charity. Two charities operating the same model inherit the same evidence grade; what differs between them is cost-effectiveness, transparency, and room for more funding. Evidence grades are assigned based on the overall research literature for the program model, not on a single study.</p>
+      <p>Our grading considers: the strength of causal identification (RCTs and quasi-experiments with strong designs outweigh correlational studies), replication across independent research teams, U.S. relevance of the evidence base, effect size relative to cost, implementation fidelity, and any documented risk of harm. When evidence is conflicting or sparse, we lean toward lower grades rather than toward optimism.</p>
+    </div>
+
+    <div style="margin-top: 24px;">
+
+      <div class="grade-row">
+        <div class="grade-row-indicator">
+          <span class="grade-dot-lg dot-green"></span>
+        </div>
+        <div class="grade-row-label">
+          <span class="evidence-grade grade-strong"><span class="grade-dot"></span>Strong</span>
+        </div>
+        <div class="grade-row-desc">Multiple well-designed RCTs or quasi-experiments with consistent, replicated findings across independent research teams, with meaningful effect sizes in U.S. or closely comparable contexts.</div>
+      </div>
+
+      <div class="grade-row">
+        <div class="grade-row-indicator">
+          <span class="grade-dot-lg dot-blue"></span>
+        </div>
+        <div class="grade-row-label">
+          <span class="evidence-grade grade-moderate"><span class="grade-dot"></span>Moderate</span>
+        </div>
+        <div class="grade-row-desc">Solid evidence from at least one high-quality study with some replication, or strong theoretical grounding with supporting observational data, but gaps remain in causal identification or generalizability.</div>
+      </div>
+
+      <div class="grade-row">
+        <div class="grade-row-indicator">
+          <span class="grade-dot-lg dot-amber"></span>
+        </div>
+        <div class="grade-row-label">
+          <span class="evidence-grade grade-promising"><span class="grade-dot"></span>Promising</span>
+        </div>
+        <div class="grade-row-desc">Early or emerging evidence with logical plausibility and some empirical support, but insufficient replication, limited causal identification, or unresolved questions about cost or implementation at scale.</div>
+      </div>
+
+      <div class="grade-row">
+        <div class="grade-row-indicator">
+          <span class="grade-dot-lg dot-gray"></span>
+        </div>
+        <div class="grade-row-label">
+          <span class="evidence-grade grade-mixed"><span class="grade-dot"></span>Mixed</span>
+        </div>
+        <div class="grade-row-desc">Studies exist but reach conflicting conclusions, show meaningful heterogeneity in results, or have methodological concerns serious enough that the net direction and size of impact remain genuinely uncertain.</div>
+      </div>
+
+      <div class="grade-row">
+        <div class="grade-row-indicator">
+          <span class="grade-dot-lg dot-red"></span>
+        </div>
+        <div class="grade-row-label">
+          <span class="evidence-grade grade-weak"><span class="grade-dot"></span>Weak</span>
+        </div>
+        <div class="grade-row-desc">Available studies are primarily anecdotal, observational without adequate controls, or show no statistically or practically significant effect, with little reason to expect positive impact at scale.</div>
+      </div>
+
+      <div class="grade-row">
+        <div class="grade-row-indicator" style="margin-top:2px;">
+          <span class="badge badge-red" style="font-size:0.7rem; padding:2px 7px;">⚠</span>
+        </div>
+        <div class="grade-row-label" style="font-size:0.875rem; font-weight:600; color:var(--danger);">Potentially Harmful</div>
+        <div class="grade-row-desc">Evidence suggests the intervention may cause net harm, including programs that increase recidivism, worsen substance use outcomes, or produce significant adverse effects in rigorous studies.</div>
+      </div>
+
+      <div class="grade-row">
+        <div class="grade-row-indicator" style="margin-top:2px;">
+          <span class="badge badge-gray" style="font-size:0.7rem; padding:2px 7px;">—</span>
+        </div>
+        <div class="grade-row-label" style="font-size:0.875rem; font-weight:600; color:var(--text-secondary);">Insufficient Evidence</div>
+        <div class="grade-row-desc">No meaningful research literature exists on the intervention type, or the available studies are too methodologically weak to draw even preliminary conclusions about direction of impact.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- 4. Cost-Effectiveness Model -->
+  <section class="section">
+    <div class="section-title">Cost-Effectiveness Model</div>
+    <div class="prose">
+      <p>ClearView's cost-effectiveness estimates express expected social benefit per marginal dollar as a standardized outcome unit where possible — for example, avoided incarcerations per $10,000, stable housing-years per $100,000, or overdose deaths averted per $50,000. When outcomes cannot be reduced to a single unit, we report them in their natural terms and explain the tradeoffs.</p>
+      <p>We are explicit about <strong>moral weights</strong>. Different donors reasonably weight different outcomes differently — some care primarily about reducing suffering, others about long-run economic mobility, others about civic participation. Our default model uses a set of published moral weights that we believe are reasonable and defensible. Those weights, with full justification, are published alongside every cost-effectiveness calculation. Donors who hold different values — for instance, those who weight criminal justice impacts heavily relative to fiscal savings — can substitute alternative weights and rerun the model using our published assumptions and code.</p>
+      <p><strong>Fiscal savings are reported separately</strong> from human welfare benefits. When an intervention reduces government costs — by diverting people from incarceration, reducing emergency department visits, or shortening shelter stays — those savings are real, but they accrue to taxpayers, not to the direct beneficiaries. Conflating fiscal savings with welfare benefits can make interventions appear far more cost-effective than they are from a donor's perspective. We show both figures clearly and never sum them without explanation.</p>
+      <p>Every estimate comes with an <strong>uncertainty range</strong> derived from the range of effect sizes in the evidence base, uncertainty in program cost, and sensitivity analysis on key assumptions. When uncertainty is high, we widen the range and flag it explicitly rather than reporting a false point estimate. We also report the assumptions to which the estimate is most sensitive, so donors can judge for themselves whether those assumptions are plausible.</p>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- 5. Room for More Funding -->
+  <section class="section">
+    <div class="section-title">Room for More Funding</div>
+    <div class="prose">
+      <p>Estimating room for more funding is one of the most difficult and most important steps in our analysis. A charity that runs proven programs may still offer poor marginal impact to new donors if it already has more money than it can deploy effectively, if it operates in a space saturated by government or foundation funding, or if its growth is limited by factors — staff capacity, facility constraints, regulatory approvals — that money alone cannot solve quickly.</p>
+      <p>We analyze each charity's funding situation at four donation levels, reflecting the different contexts of individual donors, small foundations, and institutional grantmakers.</p>
+    </div>
+
+    <div class="funding-row">
+      <div class="funding-cell">
+        <div class="funding-amount">$100k</div>
+        <div class="funding-desc">Typical large individual donor. Assesses whether a single significant gift would be used productively or would sit idle.</div>
+      </div>
+      <div class="funding-cell">
+        <div class="funding-amount">$250k</div>
+        <div class="funding-desc">Small foundation or donor-advised fund. Tests whether funding at this level unlocks a program component or runs into capacity limits.</div>
+      </div>
+      <div class="funding-cell">
+        <div class="funding-amount">$1M</div>
+        <div class="funding-desc">Mid-sized institutional grant. Relevant for major donors and small-to-mid funders evaluating a multi-year commitment.</div>
+      </div>
+      <div class="funding-cell">
+        <div class="funding-amount">$5M</div>
+        <div class="funding-desc">Large institutional funding. Tests whether the charity could deploy a large grant without displacing existing donors or facing organizational strain.</div>
+      </div>
+    </div>
+
+    <div class="prose">
+      <p><strong>Displacement and fungibility</strong> are important considerations at every funding level. If a charity's expenses are already fully covered by government contracts or foundation grants, a new private donation may simply allow it to redirect other funding — a phenomenon sometimes called "funging." This is not automatically bad: freed-up unrestricted funds can be valuable. But it does change the marginal calculus, and we assess it explicitly rather than assuming all additional donations produce fresh spending on program delivery.</p>
+      <p><strong>Bottlenecks</strong> are the binding constraints that limit a charity's ability to expand its impact. Some bottlenecks are financial — the charity simply lacks the budget to hire more case managers or open another site. Others are non-financial: waiting for city permits, recruiting specialized staff in a tight labor market, navigating regulatory requirements, or building relationships with referral partners. Identifying the true bottleneck matters because it determines whether a donation actually moves the constraint. We characterize each charity's primary bottleneck and explain how it affects our marginal impact assessment.</p>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- 6. Transparency Scoring -->
+  <section class="section">
+    <div class="section-title">Transparency Scoring</div>
+    <div class="prose">
+      <p>Transparency is a core input to our evaluation, but we treat financial transparency and impact transparency as two distinct dimensions rather than combining them into a single score. The distinction matters because the two types of disclosure answer different questions and are produced by different parts of an organization — and because conflating them can lead donors to over-reward organizations with excellent accountants while ignoring whether programs actually work.</p>
+    </div>
+
+    <div class="transparency-grid">
+      <div class="transparency-card">
+        <div class="transparency-card-title">Financial Transparency</div>
+        <p>Financial transparency covers how completely and accessibly a charity discloses its financial affairs. We look for audited financial statements prepared by an independent CPA, timely Form 990 filings with meaningful program descriptions, a clear breakdown of revenue by source, program vs. management vs. fundraising spending ratios with explanations of any unusual patterns, and disclosure of executive compensation and related-party transactions.</p>
+        <p>We also assess accessibility: whether documents are easy to find on the charity's website, whether financial data is presented in plain language for non-expert donors, and whether the organization responds to direct requests for financial information.</p>
+      </div>
+      <div class="transparency-card">
+        <div class="transparency-card-title">Impact Transparency</div>
+        <p>Impact transparency covers whether a charity clearly reports what its programs do, how many people they serve, what outcomes are measured, and what the evidence for those outcomes looks like. A high impact transparency score requires more than a page of testimonials and a headline statistic: it requires disclosed outcome metrics with clear definitions, consistent tracking methodology, multi-year data, and honest reporting of results that fell short of targets.</p>
+        <p>We look for: published logic models or theory of change, outcome data separated from output data (number served vs. change in participants' lives), disclosure of how data is collected and verified, and willingness to share program evaluations — including unflattering ones.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- 7. Recommendation Categories -->
+  <section class="section">
+    <div class="section-title">Recommendation Categories</div>
+    <div class="prose">
+      <p>After completing our evaluation, we assign each reviewed charity to one of six categories. These categories reflect our overall assessment of marginal impact, evidence quality, cost-effectiveness, and transparency — not a mechanical point total. Where a charity falls near a category boundary, we explain the reasoning and flag relevant uncertainties.</p>
+    </div>
+
+    <div class="rec-category-list" style="margin-top: 20px;">
+
+      <div class="rec-category-item">
+        <div class="rec-category-badge">
+          <span class="badge badge-green">Top Charity</span>
+        </div>
+        <div class="rec-category-body">
+          <div class="rec-category-name">Top Charities</div>
+          <div class="rec-category-desc">Strong evidence base, high cost-effectiveness, clear room for more funding at relevant donation levels, and strong transparency on both financial and impact dimensions. We recommend directing donations here first.</div>
+        </div>
+      </div>
+
+      <div class="rec-category-item">
+        <div class="rec-category-badge">
+          <span class="badge badge-teal">Strong / Constrained</span>
+        </div>
+        <div class="rec-category-body">
+          <div class="rec-category-name">Strong but Funding-Constrained</div>
+          <div class="rec-category-desc">Meets or nearly meets Top Charity standards on evidence and cost-effectiveness, but has limited room for more funding at typical donation levels — either because it is already well-resourced or because its growth is bottlenecked by non-financial factors. Excellent for large institutional donors; may offer less marginal value to individual donors.</div>
+        </div>
+      </div>
+
+      <div class="rec-category-item">
+        <div class="rec-category-badge">
+          <span class="badge badge-yellow">Promising</span>
+        </div>
+        <div class="rec-category-body">
+          <div class="rec-category-name">Promising but Uncertain</div>
+          <div class="rec-category-desc">Operates a plausible or emerging-evidence model with good transparency and apparent funding need, but the evidence base is not yet strong enough to confidently recommend. May become a Top Charity as more research emerges. Appropriate for donors comfortable with higher uncertainty and interested in supporting early-stage programs.</div>
+        </div>
+      </div>
+
+      <div class="rec-category-item">
+        <div class="rec-category-badge">
+          <span class="badge badge-blue">Policy Leverage</span>
+        </div>
+        <div class="rec-category-body">
+          <div class="rec-category-name">Policy-Leverage Opportunities</div>
+          <div class="rec-category-desc">Organizations whose primary mechanism of impact is changing laws, regulations, or government practice rather than delivering direct services. These carry different evidence standards, higher uncertainty, and potentially very high expected value per dollar. We evaluate them separately from direct-service charities and flag the additional uncertainty clearly.</div>
+        </div>
+      </div>
+
+      <div class="rec-category-item">
+        <div class="rec-category-badge">
+          <span class="badge badge-gray">Not Yet</span>
+        </div>
+        <div class="rec-category-body">
+          <div class="rec-category-name">Charities Not Recommended Yet</div>
+          <div class="rec-category-desc">We have conducted a preliminary review and found the charity worth monitoring, but have not yet completed a full evaluation or do not yet have enough information to make a recommendation. This is a neutral holding status, not a negative finding.</div>
+        </div>
+      </div>
+
+      <div class="rec-category-item">
+        <div class="rec-category-badge">
+          <span class="badge badge-red">Not Recommended</span>
+        </div>
+        <div class="rec-category-body">
+          <div class="rec-category-name">Not Recommended</div>
+          <div class="rec-category-desc">After full evaluation, we do not recommend donating to this charity at this time. Reasons may include insufficient evidence, low cost-effectiveness relative to alternatives, poor transparency, lack of room for more funding, or evidence of harm. We publish the full reasoning for every Not Recommended finding.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- 8. Governance -->
+  <section class="section">
+    <div class="section-title">Governance</div>
+    <div class="prose">
+      <p>The credibility of any charity evaluator depends not just on the quality of its analysis, but on the structural safeguards that protect against conflicts of interest, catch and correct errors, and allow outside scrutiny. The following policies govern how ClearView operates. Each can be expanded for details.</p>
+    </div>
+
+    <div class="details-group">
+
+      <details>
+        <summary>Conflict of Interest Policy</summary>
+        <div class="details-body">
+          <p>All ClearView staff, advisors, and funders must disclose any financial, employment, or personal relationship with charities we evaluate. This includes board membership, employment history within the prior three years, receiving grants from a reviewed charity's funders, and personal relationships with charity leadership.</p>
+          <p>Where a conflict exists, the staff member is recused from that evaluation. The conflict is disclosed in the published review regardless of whether the conflicted party was involved. Funder relationships are disclosed on the Sources page. This policy is published in full and updated whenever our team or funding changes.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Public Correction Log</summary>
+        <div class="details-body">
+          <p>Every factual error correction — whether self-identified or reported by a reader, charity, or outside researcher — is logged on the Corrections page with the date discovered, the page or document affected, a description of the error, the corrected information, and a note on whether the correction changed any recommendation or score.</p>
+          <p>We do not quietly update pages without a log entry. When a correction materially changes a finding, we publish an explanation of what changed and why. Corrections that result from updated data (for example, a charity's newly released annual report) are distinguished from corrections of factual errors in our original analysis.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Charity Response Period</summary>
+        <div class="details-body">
+          <p>Before publishing a full evaluation, we share a draft with the charity and provide a minimum of ten business days to submit factual corrections. We review all responses and either incorporate the corrections, explain why we did not, or flag disagreements as unresolved in the published report.</p>
+          <p>Charities may also submit additional evidence, share unpublished program data, or request reconsideration of specific findings. We do not revise our overall recommendation at a charity's request unless a factual correction or new evidence justifies it. Charity responses — and any disagreements we were unable to resolve — are published verbatim as an appendix to the review.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Outside Review</summary>
+        <div class="details-body">
+          <p>ClearView's methodology and sample evaluations are reviewed by outside researchers with relevant expertise before public launch. Reviewers are independent of the evaluated charities and disclose any potential conflicts. Review comments and our responses are published.</p>
+          <p>We also invite ongoing peer review: researchers, program evaluators, and practitioners who identify errors or methodological concerns may submit them through our corrections process. Substantive methodological challenges are addressed publicly, not just privately, so that our reasoning is available for independent scrutiny.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Reproducible Code and Assumptions</summary>
+        <div class="details-body">
+          <p>All cost-effectiveness calculations are performed in code that is published alongside each evaluation. The code includes full annotations of assumptions, data sources, and uncertainty ranges. Readers can download the code, substitute their own assumptions, and reproduce or challenge our estimates without needing to contact us.</p>
+          <p>Moral weights used in our default model are published with justification. Alternative weight sets that represent reasonable alternative views are also provided. Where our conclusions are sensitive to specific assumptions, we flag those assumptions and show how results change as they vary across plausible ranges.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Annual Review Schedule</summary>
+        <div class="details-body">
+          <p>Every charity we evaluate is subject to an annual review update. Updates incorporate new program data, updated financials, changes to funding levels, and any new research published on the relevant intervention type. If a charity's situation has changed materially — its funding has grown, its evidence base has weakened, or new concerns have emerged — the recommendation is revised and the change is logged.</p>
+          <p>Charities that do not respond to annual data requests, or whose transparency has declined since the prior review, receive a flag in their profile. Recommendations that have not been updated within 18 months are marked as potentially stale, pending review, with the last-updated date clearly shown.</p>
+        </div>
+      </details>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-copy">ClearView — U.S. Charity Effectiveness · This site is a template under development. No real evaluations have been published.</span>
+    <div class="footer-links">
+      <a href="methodology.html">Methodology</a>
+      <a href="corrections.html">Corrections</a>
+      <a href="sources.html">Sources</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
