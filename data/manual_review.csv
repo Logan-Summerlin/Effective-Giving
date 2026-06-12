@@ -1,0 +1,11 @@
+charity_id,cause_area,review_date,reviewer,identity_match,cause_area_fit_check,latest_filing_cross_check,missing_field_handling,evaluation_guardrail,result,notes
+us-ein-133072967,homelessness,2026-06-12,prototype_manual_review,pass,pass,pass,pass,pass,pass,"EIN and legal name matched; latest filing totals were present; inclusion is not an effectiveness judgment."
+us-ein-621475145,homelessness,2026-06-12,prototype_manual_review,pass,pass,pass,pass,pass,pass,"Name and NTEE support prototype relevance; program details remain unverified."
+us-ein-133843322,criminal_recidivism_and_reentry,2026-06-12,prototype_manual_review,pass,pass,pass,pass,pass,pass,"Identity and filing values matched the raw snapshot; intervention and outcomes remain unassessed."
+us-ein-463876220,criminal_recidivism_and_reentry,2026-06-12,prototype_manual_review,pass,pass,pass,pass,pass,pass,"Identity match confirmed; exact program scope requires later review."
+us-ein-631135091,criminal_justice,2026-06-12,prototype_manual_review,pass,pass,pass,pass,pass,pass,"Identity and filing totals matched; no conclusion drawn from organization size or assets."
+us-ein-920642786,criminal_justice,2026-06-12,prototype_manual_review,pass,pass,not_available,pass,pass,pass_with_missing_data,"API snapshot exposed identity but no filings_with_data; financials correctly omitted and flagged missing."
+us-ein-521584951,legal_immigrant_integration,2026-06-12,prototype_manual_review,pass,pass,pass,pass,pass,pass,"Identity and latest filing matched; legal service outcomes remain unassessed."
+us-ein-941156554,legal_immigrant_integration,2026-06-12,prototype_manual_review,pass,pass,pass,pass,pass,pass,"Identity and filing values matched; service geography is not inferred from headquarters."
+us-ein-943204958,drug_addiction_treatment_and_harm_reduction,2026-06-12,prototype_manual_review,pass,pass,pass,pass,pass,pass,"Identity and filing values matched; harm-reduction impact is not inferred from classification."
+us-ein-410682405,drug_addiction_treatment_and_harm_reduction,2026-06-12,prototype_manual_review,pass,pass,pass,pass,pass,pass,"Identity and filing values matched; financial scale is not treated as evidence of impact."

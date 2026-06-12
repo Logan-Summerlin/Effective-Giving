@@ -1,0 +1,51 @@
+charity_id,ein,legal_name,cause_area_primary,city,state,ntee_code,fiscal_year,total_revenue,total_expenses,total_assets,liabilities,financial_record_status,manual_review_status,source_id
+us-ein-813422012,81-3422012,Civil Rights Corps,criminal_justice,Washington,DC,R60,2023,5645855,6666033,15924714,2144111,machine_extracted,not_reviewed,propublica-org-813422012
+us-ein-631135091,63-1135091,Equal Justice Initiative,criminal_justice,Montgomery,AL,R63,2023,67268484,55139943,427846693,9320295,machine_extracted,not_reviewed,propublica-org-631135091
+us-ein-920642786,92-0642786,Fines And Fees Justice Center Inc,criminal_justice,New York,NY,I05,,,,,,missing,not_reviewed,propublica-org-920642786
+us-ein-320077563,32-0077563,Innocence Project Inc,criminal_justice,New York,NY,P20,2023,32455846,26212682,105843645,14830781,machine_extracted,not_reviewed,propublica-org-320077563
+us-ein-452119421,45-2119421,Measures For Justice Institute,criminal_justice,Rochester,NY,R05,2023,7457391,13074281,23469430,1259757,machine_extracted,not_reviewed,propublica-org-452119421
+us-ein-203671130,20-3671130,Prison Policy Initiative Inc,criminal_justice,Northampton,MA,R40,2024,4146849,1697210,8305767,14343,machine_extracted,not_reviewed,propublica-org-203671130
+us-ein-621025326,62-1025326,Southern Center For Human Rights,criminal_justice,Atlanta,GA,R02,2023,4233073,5495397,13220230,360633,machine_extracted,not_reviewed,propublica-org-621025326
+us-ein-383740913,38-3740913,Texas Fair Defense Project,criminal_justice,Austin,TX,I80,2023,829144,1122141,202527,61159,machine_extracted,not_reviewed,propublica-org-383740913
+us-ein-521472546,52-1472546,The Sentencing Project,criminal_justice,Washington,DC,,2023,4149060,5505348,7274373,529217,machine_extracted,not_reviewed,propublica-org-521472546
+us-ein-131941627,13-1941627,Vera Institute Of Justice Inc,criminal_justice,Brooklyn,NY,I20Z,2023,263167197,262476408,256287526,128208791,machine_extracted,not_reviewed,propublica-org-131941627
+us-ein-133843322,13-3843322,Center For Employment Opportunities Inc,criminal_recidivism_and_reentry,New York,NY,J20,2023,101892940,100359172,53113212,22278154,machine_extracted,not_reviewed,propublica-org-133843322
+us-ein-273611908,27-3611908,Defy Ventures Inc,criminal_recidivism_and_reentry,Los Angeles,CA,B90,2023,4021502,3830168,3316665,724833,machine_extracted,not_reviewed,propublica-org-273611908
+us-ein-311731465,31-1731465,Exodus Transitional Community Inc,criminal_recidivism_and_reentry,New York,NY,I400,2023,11491852,14236262,20998495,21917639,machine_extracted,not_reviewed,propublica-org-311731465
+us-ein-061711370,06-1711370,Getting Out And Staying Out Inc,criminal_recidivism_and_reentry,New York,NY,I43,2023,6732010,6946719,8087906,6270036,machine_extracted,not_reviewed,propublica-org-061711370
+us-ein-954800735,95-4800735,Homeboy Industries,criminal_recidivism_and_reentry,Los Angeles,CA,O53,2023,47197305,40046279,102103885,29621708,machine_extracted,not_reviewed,propublica-org-954800735
+us-ein-454133644,45-4133644,Hope For Prisoners Om Inc,criminal_recidivism_and_reentry,Las Vegas,NV,P20,2023,3272159,3371394,489585,193108,machine_extracted,not_reviewed,propublica-org-454133644
+us-ein-463876220,46-3876220,Root & Rebound,criminal_recidivism_and_reentry,San Francisco,CA,I40,2023,3889803,4126957,2116410,362729,machine_extracted,not_reviewed,propublica-org-463876220
+us-ein-942301550,94-2301550,Rubicon Programs Inc,criminal_recidivism_and_reentry,Richmond,CA,,2023,16240917,18927423,11329528,4636791,machine_extracted,not_reviewed,propublica-org-942301550
+us-ein-362762168,36-2762168,Safer Foundation,criminal_recidivism_and_reentry,Chicago,IL,I400,2023,39151800,36317606,25418199,22158522,machine_extracted,not_reviewed,propublica-org-362762168
+us-ein-132645436,13-2645436,The Fortune Society Inc,criminal_recidivism_and_reentry,Long Island City,NY,F22Z,2023,65270782,62740538,63177719,36883609,machine_extracted,not_reviewed,propublica-org-132645436
+us-ein-510516206,51-0516206,Faces And Voices Of Recovery,drug_addiction_treatment_and_harm_reduction,Washington,DC,F01,2023,3956409,4271802,1711271,368031,machine_extracted,not_reviewed,propublica-org-510516206
+us-ein-410682405,41-0682405,Hazelden Betty Ford Foundation,drug_addiction_treatment_and_harm_reduction,Center City,MN,F200,2023,219658289,226955255,590700664,243468544,machine_extracted,not_reviewed,propublica-org-410682405
+us-ein-201327278,20-1327278,Mcshin Foundation,drug_addiction_treatment_and_harm_reduction,Henrico,VA,F20,2023,3374360,3227491,2329255,725283,machine_extracted,not_reviewed,propublica-org-201327278
+us-ein-943204958,94-3204958,National Harm Reduction Coalition,drug_addiction_treatment_and_harm_reduction,New York,NY,E30,2022,12817781,13022356,6036282,4093848,machine_extracted,not_reviewed,propublica-org-943204958
+us-ein-136217765,13-6217765,Odyssey House Inc,drug_addiction_treatment_and_harm_reduction,New York,NY,F220,2023,38162246,36997148,70938481,61566157,machine_extracted,not_reviewed,propublica-org-136217765
+us-ein-232663699,23-2663699,Prevention Point Philadelphia Incorporated,drug_addiction_treatment_and_harm_reduction,Philadelphia,PA,,2023,16340371,16318021,7437332,3387195,machine_extracted,not_reviewed,propublica-org-232663699
+us-ein-454619712,45-4619712,Shatterproof A Nonprofit Corp,drug_addiction_treatment_and_harm_reduction,Boston,MA,F12,2023,23531335,22597392,21940548,4569788,machine_extracted,not_reviewed,propublica-org-454619712
+us-ein-830781172,83-0781172,Stop The Addiction Fatality Epidemic   Safe   Project Us,drug_addiction_treatment_and_harm_reduction,Arlington,VA,F20,2023,3677987,2501566,4674984,35747,machine_extracted,not_reviewed,propublica-org-830781172
+us-ein-800748314,80-0748314,The Herren Project,drug_addiction_treatment_and_harm_reduction,Portsmouth,RI,F21,2023,1951096,2117365,944797,66518,machine_extracted,not_reviewed,propublica-org-800748314
+us-ein-464109067,46-4109067,Young People In Recovery,drug_addiction_treatment_and_harm_reduction,Denver,CO,P20,2023,2703008,3318164,4775814,555212,machine_extracted,not_reviewed,propublica-org-464109067
+us-ein-930728816,93-0728816,Central City Concern Inc,homelessness,Portland,OR,F22Z,2023,154302580,126969165,247821049,71390699,machine_extracted,not_reviewed,propublica-org-930728816
+us-ein-133072967,13-3072967,Coalition For The Homeless Inc,homelessness,New York,NY,,2023,18883961,17363117,45019993,1459960,machine_extracted,not_reviewed,propublica-org-133072967
+us-ein-273523909,27-3523909,Community Solutions International Inc,homelessness,New York,NY,L24,2023,25480276,38990209,195409824,52061222,machine_extracted,not_reviewed,propublica-org-273523909
+us-ein-132725416,13-2725416,Covenant House,homelessness,New York,NY,P300,2023,88308947,93499670,154690928,26658865,machine_extracted,not_reviewed,propublica-org-132725416
+us-ein-133391210,13-3391210,Covenant House California,homelessness,Los Angeles,CA,P300,2023,22334502,22433117,28386695,7759767,machine_extracted,not_reviewed,propublica-org-133391210
+us-ein-911275815,91-1275815,Downtown Emergency Service Center,homelessness,Seattle,WA,F300,2023,92193786,92063161,110724598,81087390,machine_extracted,not_reviewed,propublica-org-911275815
+us-ein-521925494,52-1925494,Friendship Place,homelessness,Washington,DC,L41,2023,20745776,21636609,10041623,2681394,machine_extracted,not_reviewed,propublica-org-521925494
+us-ein-621475145,62-1475145,National Health Care For The Homeless Council Inc,homelessness,Nashville,TN,P85Z,2023,9173786,8734299,4993262,3006997,machine_extracted,not_reviewed,propublica-org-621475145
+us-ein-760260403,76-0260403,Search Homeless Services,homelessness,Houston,TX,P850,,,,,,missing,not_reviewed,propublica-org-760260403
+us-ein-521299641,52-1299641,The National Alliance To End Homelessness Incorporated,homelessness,Washington,DC,L00A,2023,7656753,8440152,29610355,1457164,machine_extracted,not_reviewed,propublica-org-521299641
+us-ein-521549711,52-1549711,American Immigration Council,legal_immigrant_integration,Washington,DC,,2023,8289905,12404600,15043628,2630071,machine_extracted,not_reviewed,propublica-org-521549711
+us-ein-521584951,52-1584951,Catholic Legal Immigration Network Inc,legal_immigrant_integration,Silver Spring,MD,R20,2023,16041239,16661029,18644665,5430541,machine_extracted,not_reviewed,propublica-org-521584951
+us-ein-135633307,13-5633307,Hias Inc,legal_immigrant_integration,Silver Spring,MD,Q710,2023,88116244,130982122,94700498,40149730,machine_extracted,not_reviewed,propublica-org-135633307
+us-ein-942939540,94-2939540,Immigrant Legal Resource Center,legal_immigrant_integration,San Francisco,CA,P84Z,2023,25328640,22307428,50810408,6932345,machine_extracted,not_reviewed,propublica-org-942939540
+us-ein-941156554,94-1156554,Immigration Institute Of The Bay Area,legal_immigrant_integration,San Francisco,CA,A20,2023,5960590,6353055,9199229,2903966,machine_extracted,not_reviewed,propublica-org-941156554
+us-ein-135660870,13-5660870,International Rescue Committee Inc,legal_immigrant_integration,New York,NY,Q710,2023,1341268864,1428761701,629978674,348949775,machine_extracted,not_reviewed,propublica-org-135660870
+us-ein-131776711,13-1776711,National Immigration Forum Inc,legal_immigrant_integration,Washington,DC,,2023,6672425,6483852,11447475,3414627,machine_extracted,not_reviewed,propublica-org-131776711
+us-ein-954539765,95-4539765,National Immigration Law Center,legal_immigrant_integration,Los Angeles,CA,R20,2023,12123905,18164437,31412839,3130789,machine_extracted,not_reviewed,propublica-org-954539765
+us-ein-952926663,95-2926663,National Immigration Project Of The National Lawyers Guild Inc,legal_immigrant_integration,Washington,DC,R21Z,2023,3438865,2772497,3304801,381244,machine_extracted,not_reviewed,propublica-org-952926663
+us-ein-541858176,54-1858176,Tahirih Justice Center,legal_immigrant_integration,Falls Church,VA,R21Z,2023,9670506,11087025,9074924,5165178,machine_extracted,not_reviewed,propublica-org-541858176

@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://effective-giving.example/schemas/charity-profile-0.1.0.json",
+  "title": "Effective Giving charity profile prototype",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "charity_id",
+    "selection",
+    "identity",
+    "financials",
+    "programs",
+    "transparency",
+    "evaluation",
+    "field_quality",
+    "provenance",
+    "review",
+    "record_updated_at"
+  ],
+  "properties": {
+    "schema_version": {"const": "0.1.0"},
+    "charity_id": {"type": "string", "pattern": "^us-ein-[0-9]{9}$"},
+    "selection": {
+      "type": "object",
+      "required": ["cause_area_primary", "selection_rationale", "selection_status", "recommendation_status"],
+      "properties": {
+        "cause_area_primary": {
+          "enum": [
+            "homelessness",
+            "criminal_recidivism_and_reentry",
+            "criminal_justice",
+            "legal_immigrant_integration",
+            "drug_addiction_treatment_and_harm_reduction"
+          ]
+        },
+        "selection_rationale": {"type": "string", "minLength": 20},
+        "selection_status": {"const": "prototype_candidate_not_evaluated"},
+        "recommendation_status": {"const": "not_evaluated"}
+      },
+      "additionalProperties": false
+    },
+    "identity": {
+      "type": "object",
+      "required": ["ein", "legal_name", "headquarters"],
+      "properties": {
+        "ein": {"type": "string", "pattern": "^[0-9]{2}-[0-9]{7}$"},
+        "legal_name": {"type": "string", "minLength": 1},
+        "alternate_names": {"type": "array", "items": {"type": "string"}},
+        "website_url": {"type": ["string", "null"]},
+        "headquarters": {
+          "type": "object",
+          "required": ["address", "city", "state", "zip"],
+          "properties": {
+            "address": {"type": ["string", "null"]},
+            "city": {"type": "string", "minLength": 1},
+            "state": {"type": "string", "pattern": "^[A-Z]{2}$"},
+            "zip": {"type": ["string", "null"]}
+          }
+        },
+        "service_geography": {"type": ["string", "null"]},
+        "operating_scope": {"type": ["string", "null"]},
+        "ntee_code": {"type": ["string", "null"]},
+        "subsection_code": {"type": ["integer", "null"]},
+        "tax_exempt_status_code": {"type": ["integer", "null"]}
+      }
+    },
+    "financials": {
+      "type": "array",
+      "maxItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["fiscal_year", "total_revenue", "total_expenses", "total_assets", "liabilities"],
+        "properties": {
+          "fiscal_year": {"type": "integer", "minimum": 1990, "maximum": 2100},
+          "total_revenue": {"type": ["integer", "null"]},
+          "total_expenses": {"type": ["integer", "null"], "minimum": 0},
+          "total_assets": {"type": ["integer", "null"], "minimum": 0},
+          "liabilities": {"type": ["integer", "null"], "minimum": 0}
+        }
+      }
+    },
+    "programs": {"type": "array"},
+    "transparency": {
+      "type": "object",
+      "required": ["financial_transparency_grade", "impact_transparency_grade"],
+      "properties": {
+        "financial_transparency_grade": {"const": "not_assessed"},
+        "impact_transparency_grade": {"const": "not_assessed"}
+      },
+      "additionalProperties": false
+    },
+    "evaluation": {
+      "type": "object",
+      "required": ["evidence_grade", "recommendation_category"],
+      "properties": {
+        "evidence_grade": {"const": "not_assessed"},
+        "estimated_cost_per_outcome": {"type": "null"},
+        "estimated_marginal_cost_effectiveness": {"type": "null"},
+        "funding_gap": {"type": "null"},
+        "uncertainty_range": {"type": "null"},
+        "recommendation_category": {"const": "not_evaluated"}
+      },
+      "additionalProperties": false
+    },
+    "field_quality": {"type": "object"},
+    "provenance": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["source_id", "source_url", "retrieved_at", "access_method", "raw_snapshot", "fields_extracted", "limitations", "parsing_confidence"]
+      }
+    },
+    "review": {
+      "type": "object",
+      "required": ["manual_review_status", "last_reviewed", "review_notes"]
+    },
+    "record_updated_at": {"type": "string", "format": "date"}
+  },
+  "additionalProperties": false
+}

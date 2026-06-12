@@ -1,0 +1,51 @@
+charity_id,ein,cause_area,selection_rationale,selection_status
+us-ein-133072967,13-3072967,homelessness,"Public-record search identified an organization whose name and filing classification indicate direct homelessness services or systems work.",prototype_candidate_not_evaluated
+us-ein-273523909,27-3523909,homelessness,"Public-record search identified an organization whose filing classification indicates housing-focused systems work.",prototype_candidate_not_evaluated
+us-ein-521299641,52-1299641,homelessness,"Public-record search identified a national organization focused on ending homelessness.",prototype_candidate_not_evaluated
+us-ein-911275815,91-1275815,homelessness,"Public-record search identified an organization providing services relevant to homelessness and behavioral health.",prototype_candidate_not_evaluated
+us-ein-930728816,93-0728816,homelessness,"Public-record search identified an organization providing housing and supportive services.",prototype_candidate_not_evaluated
+us-ein-521925494,52-1925494,homelessness,"Public-record search identified an organization classified as a homeless shelter or service provider.",prototype_candidate_not_evaluated
+us-ein-621475145,62-1475145,homelessness,"Public-record search identified an organization focused on health care for people experiencing homelessness.",prototype_candidate_not_evaluated
+us-ein-132725416,13-2725416,homelessness,"Public-record search identified a youth housing and shelter organization.",prototype_candidate_not_evaluated
+us-ein-133391210,13-3391210,homelessness,"Public-record search identified a regional youth housing and shelter organization.",prototype_candidate_not_evaluated
+us-ein-760260403,76-0260403,homelessness,"Public-record search identified an organization classified as a homelessness service provider.",prototype_candidate_not_evaluated
+us-ein-133843322,13-3843322,criminal_recidivism_and_reentry,"Public-record search identified an employment organization serving people returning from incarceration.",prototype_candidate_not_evaluated
+us-ein-132645436,13-2645436,criminal_recidivism_and_reentry,"Public-record search identified an organization providing reentry and behavioral-health services.",prototype_candidate_not_evaluated
+us-ein-362762168,36-2762168,criminal_recidivism_and_reentry,"Public-record search identified an organization classified in correctional or reentry services.",prototype_candidate_not_evaluated
+us-ein-273611908,27-3611908,criminal_recidivism_and_reentry,"Public-record search identified an entrepreneurship and reentry organization.",prototype_candidate_not_evaluated
+us-ein-454133644,45-4133644,criminal_recidivism_and_reentry,"Public-record search identified an organization focused on services for people leaving prison.",prototype_candidate_not_evaluated
+us-ein-463876220,46-3876220,criminal_recidivism_and_reentry,"Public-record search identified a reentry legal-services organization.",prototype_candidate_not_evaluated
+us-ein-061711370,06-1711370,criminal_recidivism_and_reentry,"Public-record search identified a reentry organization serving formerly incarcerated people.",prototype_candidate_not_evaluated
+us-ein-311731465,31-1731465,criminal_recidivism_and_reentry,"Public-record search identified an organization classified in correctional or reentry services.",prototype_candidate_not_evaluated
+us-ein-954800735,95-4800735,criminal_recidivism_and_reentry,"Public-record search identified a workforce organization serving people affected by gangs and incarceration.",prototype_candidate_not_evaluated
+us-ein-942301550,94-2301550,criminal_recidivism_and_reentry,"Public-record search identified a workforce and reentry service organization.",prototype_candidate_not_evaluated
+us-ein-631135091,63-1135091,criminal_justice,"Public-record search identified a civil-rights legal organization working on criminal-justice issues.",prototype_candidate_not_evaluated
+us-ein-131941627,13-1941627,criminal_justice,"Public-record search identified a criminal-justice research and policy organization.",prototype_candidate_not_evaluated
+us-ein-320077563,32-0077563,criminal_justice,"Public-record search identified a legal organization focused on wrongful convictions.",prototype_candidate_not_evaluated
+us-ein-203671130,20-3671130,criminal_justice,"Public-record search identified a research organization focused on incarceration policy.",prototype_candidate_not_evaluated
+us-ein-621025326,62-1025326,criminal_justice,"Public-record search identified a civil-rights legal organization working on criminal-justice issues.",prototype_candidate_not_evaluated
+us-ein-813422012,81-3422012,criminal_justice,"Public-record search identified a civil-rights litigation organization.",prototype_candidate_not_evaluated
+us-ein-920642786,92-0642786,criminal_justice,"Public-record search identified a policy organization focused on fines and fees.",prototype_candidate_not_evaluated
+us-ein-452119421,45-2119421,criminal_justice,"Public-record search identified a criminal-justice measurement organization.",prototype_candidate_not_evaluated
+us-ein-383740913,38-3740913,criminal_justice,"Public-record search identified an indigent-defense and criminal-justice legal organization.",prototype_candidate_not_evaluated
+us-ein-521472546,52-1472546,criminal_justice,"Public-record search identified a sentencing-policy research organization.",prototype_candidate_not_evaluated
+us-ein-954539765,95-4539765,legal_immigrant_integration,"Public-record search identified an immigration law and policy organization.",prototype_candidate_not_evaluated
+us-ein-521584951,52-1584951,legal_immigrant_integration,"Public-record search identified a network providing immigration legal services.",prototype_candidate_not_evaluated
+us-ein-541858176,54-1858176,legal_immigrant_integration,"Public-record search identified a legal-services organization serving immigrant survivors.",prototype_candidate_not_evaluated
+us-ein-135633307,13-5633307,legal_immigrant_integration,"Public-record search identified a refugee and immigrant integration organization.",prototype_candidate_not_evaluated
+us-ein-135660870,13-5660870,legal_immigrant_integration,"Public-record search identified a refugee resettlement and integration organization.",prototype_candidate_not_evaluated
+us-ein-941156554,94-1156554,legal_immigrant_integration,"Public-record search identified a regional immigration legal-services organization.",prototype_candidate_not_evaluated
+us-ein-131776711,13-1776711,legal_immigrant_integration,"Public-record search identified an immigration policy and integration organization.",prototype_candidate_not_evaluated
+us-ein-942939540,94-2939540,legal_immigrant_integration,"Public-record search identified an immigration legal-resource organization.",prototype_candidate_not_evaluated
+us-ein-521549711,52-1549711,legal_immigrant_integration,"Public-record search identified an immigration legal and policy organization.",prototype_candidate_not_evaluated
+us-ein-952926663,95-2926663,legal_immigrant_integration,"Public-record search identified an immigration legal-services network.",prototype_candidate_not_evaluated
+us-ein-454619712,45-4619712,drug_addiction_treatment_and_harm_reduction,"Public-record search identified an addiction-focused education and advocacy organization.",prototype_candidate_not_evaluated
+us-ein-943204958,94-3204958,drug_addiction_treatment_and_harm_reduction,"Public-record search identified a national harm-reduction organization.",prototype_candidate_not_evaluated
+us-ein-800748314,80-0748314,drug_addiction_treatment_and_harm_reduction,"Public-record search identified an addiction recovery support organization.",prototype_candidate_not_evaluated
+us-ein-410682405,41-0682405,drug_addiction_treatment_and_harm_reduction,"Public-record search identified an addiction treatment organization.",prototype_candidate_not_evaluated
+us-ein-232663699,23-2663699,drug_addiction_treatment_and_harm_reduction,"Public-record search identified a harm-reduction and public-health organization.",prototype_candidate_not_evaluated
+us-ein-510516206,51-0516206,drug_addiction_treatment_and_harm_reduction,"Public-record search identified a recovery advocacy organization.",prototype_candidate_not_evaluated
+us-ein-464109067,46-4109067,drug_addiction_treatment_and_harm_reduction,"Public-record search identified a peer recovery support organization.",prototype_candidate_not_evaluated
+us-ein-201327278,20-1327278,drug_addiction_treatment_and_harm_reduction,"Public-record search identified a recovery community organization.",prototype_candidate_not_evaluated
+us-ein-830781172,83-0781172,drug_addiction_treatment_and_harm_reduction,"Public-record search identified an overdose-prevention organization.",prototype_candidate_not_evaluated
+us-ein-136217765,13-6217765,drug_addiction_treatment_and_harm_reduction,"Public-record search identified an addiction treatment organization.",prototype_candidate_not_evaluated

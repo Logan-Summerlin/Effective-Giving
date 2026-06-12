@@ -1,0 +1,51 @@
+{
+  "api_version": 2,
+  "data_source": "ProPublica Nonprofit Explorer API: https://projects.propublica.org/nonprofits/api/\nIRS Exempt Organizations Business Master File Extract (EO BMF): https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf\nIRS Annual Extract of Tax-Exempt Organization Financial Data: https://www.irs.gov/uac/soi-tax-stats-annual-extract-of-tax-exempt-organization-financial-data",
+  "filings_with_data": [],
+  "filings_without_data": [
+    {
+      "formtype": 0,
+      "formtype_str": "990",
+      "pdf_url": "https://projects.propublica.org/nonprofits/download-filing?path=2003_05_EO%2F76-0260403_990_200206.pdf",
+      "tax_prd": 200206,
+      "tax_prd_yr": 2002
+    }
+  ],
+  "organization": {
+    "accounting_period": 6,
+    "activity_codes": "001000000",
+    "address": "1712 PEASE ST",
+    "affiliation_code": 3,
+    "asset_amount": null,
+    "asset_code": 7,
+    "careofname": "% INA MONTGOMERY",
+    "city": "Houston",
+    "classification_codes": "7000",
+    "created_at": "2023-05-09T20:41:48.951Z",
+    "data_source": "current_2026_04_15",
+    "deductibility_code": 1,
+    "ein": 760260403,
+    "exempt_organization_status_code": 1,
+    "exemption_number": 0,
+    "filing_requirement_code": 6,
+    "foundation_code": 10,
+    "have_extracts": null,
+    "have_pdfs": null,
+    "id": 760260403,
+    "income_amount": null,
+    "income_code": 6,
+    "latest_object_id": null,
+    "name": "Search Homeless Services",
+    "ntee_code": "P850",
+    "organization_code": 1,
+    "pf_filing_requirement_code": 0,
+    "revenue_amount": null,
+    "ruling_date": "1989-04-01",
+    "sort_name": null,
+    "state": "TX",
+    "subsection_code": 3,
+    "tax_period": "2024-06-01",
+    "updated_at": "2026-04-15T13:46:10.926Z",
+    "zipcode": "77003-5040"
+  }
+}
