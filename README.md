@@ -9,7 +9,8 @@ The permanent product and research scope is defined in [`docs/implementation_pla
 - **Phase 0 — Website template:** complete. The static pages in `website/src/pages/` demonstrate the intended information architecture with conspicuous placeholder labels.
 - **Phase 1 — Research and governance foundation:** complete. Methodology, governance, data-source, and review templates are under `docs/`.
 - **Phase 2 — Minimum viable data prototype:** complete. `data/processed/charity_profiles.json` contains 50 non-evaluated charity identity/financial prototypes—10 in each initial cause area—with raw source snapshots, field-level quality flags, and documented provenance.
-- **Phases 3 onward:** not started. In particular, the repository does not yet contain intervention evidence maps, marginal cost-effectiveness estimates, charity reviews, or recommendations.
+- **Phase 3 — Evidence map prototype:** complete as a draft internal research product. Five structured maps cover 31 intervention categories, shared outcome metrics, 27 public evidence sources, explicit harms, research gaps, and review controls. These grades apply to intervention categories—not charities—and have not yet received outside review.
+- **Phases 4 onward:** not started. The repository does not yet contain marginal cost-effectiveness estimates, charity reviews, or recommendations.
 
 A record’s inclusion in the Phase 2 dataset means only that it was selected to test the schema and workflow. **Selection is not endorsement, evaluation, ranking, or a claim of impact.** Form 990 availability demonstrates a kind of financial transparency; it does not demonstrate impact transparency or effectiveness.
 
@@ -42,6 +43,7 @@ docs/
   methodology/                    Evaluation and governance rules
   product/                        Preregistered public-product templates
   templates/                      Evidence-map research template
+  evidence_maps/                  Generated Phase 3 cause-area maps
   data_sources/                   Source-specific collection notes
 data/
   charity_selection.csv           50 deliberately scoped prototype candidates
@@ -49,14 +51,17 @@ data/
   raw/propublica/                 Immutable API response snapshots
   processed/                      Normalized JSON/CSV and quality report
   schemas/                        Machine-readable profile schema
+  evidence_maps/                  Canonical maps and evidence source registry
 scripts/
   build_charity_prototype.py      Reproducible public-data ingestion job
+  build_evidence_map_docs.py      Deterministic Phase 3 Markdown renderer
 tests/
   test_phase2_data.py             Dataset, provenance, and schema checks
+  test_phase3_evidence_maps.py    Evidence-map completeness and provenance checks
 website/src/                      Static Phase 0 website template
 ```
 
-## Rebuild and validate the Phase 2 prototype
+## Rebuild and validate the research prototypes
 
 Python 3.11+ is sufficient; the pipeline and tests use only the standard library.
 
@@ -68,7 +73,13 @@ python scripts/build_charity_prototype.py --retrieval-date 2026-06-12
 # Review resulting source changes before committing them.
 python scripts/build_charity_prototype.py --refresh --retrieval-date YYYY-MM-DD
 
-# Validate record counts, cause-area balance, schema rules, provenance, and flags.
+# Regenerate Phase 3 evidence-map documents from canonical JSON.
+python scripts/build_evidence_map_docs.py
+
+# Confirm generated documents are current.
+python scripts/build_evidence_map_docs.py --check
+
+# Validate Phase 2 records plus Phase 3 maps, grades, metrics, provenance, and guardrails.
 python -m unittest discover -s tests -v
 ```
 
@@ -100,6 +111,8 @@ Allowed quality statuses are `verified`, `machine_extracted`, `manual_review_nee
 - [Charity review template](docs/product/charity_review_template.md)
 - [Cause-area evidence-map template](docs/templates/cause_area_evidence_map_template.md)
 - [Phase 2 manual review report](docs/phase2_manual_review.md)
+- [Phase 3 completion record](docs/phase3_completion.md)
+- [Phase 3 evidence-map data notes](data/evidence_maps/README.md)
 
 ## Data and licensing
 
