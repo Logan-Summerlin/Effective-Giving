@@ -1,0 +1,28 @@
+{
+  "cause_area_counts": {
+    "criminal_justice": 10,
+    "criminal_recidivism_and_reentry": 10,
+    "drug_addiction_treatment_and_harm_reduction": 10,
+    "homelessness": 10,
+    "legal_immigrant_integration": 10
+  },
+  "field_quality_status_counts": {
+    "machine_extracted": 938,
+    "missing": 574
+  },
+  "generated_at": "2026-06-12",
+  "interpretation_warning": "Record presence and financial transparency do not establish program effectiveness. No profile in this dataset has been evaluated or recommended.",
+  "record_count": 50,
+  "records_without_extracted_form_990_financials": [
+    "us-ein-920642786",
+    "us-ein-760260403"
+  ],
+  "records_without_ntee_code": [
+    "us-ein-521472546",
+    "us-ein-942301550",
+    "us-ein-232663699",
+    "us-ein-133072967",
+    "us-ein-521549711",
+    "us-ein-131776711"
+  ]
+}
