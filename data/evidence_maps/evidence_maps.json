@@ -1,0 +1,1666 @@
+{
+  "schema_version": "0.1.0",
+  "generated_at": "2026-06-12",
+  "status": "draft_phase3_prototype",
+  "maps": [
+    {
+      "schema_version": "0.1.0",
+      "map_id": "evidence-map-homelessness",
+      "cause_area": "homelessness",
+      "status": "draft_internal_not_for_charity_ranking",
+      "review_question": "For people experiencing or at imminent risk of homelessness in the United States, which interventions improve stable housing and wellbeing relative to usual services, and what harms occur?",
+      "population_geography": "Adults, families, and youth experiencing or at risk of homelessness in U.S. service and housing systems.",
+      "search": {
+        "search_dates": [
+          "2026-06-12"
+        ],
+        "evidence_cutoff": "2026-06-12",
+        "repositories": [
+          "PubMed",
+          "Campbell Collaboration",
+          "U.S. federal evidence repositories",
+          "National Academies",
+          "targeted citation chaining"
+        ],
+        "search_strings": [
+          "cause area + intervention + systematic review",
+          "cause area + randomized evaluation",
+          "intervention + harm + United States"
+        ],
+        "inclusion_criteria": "Public systematic reviews, meta-analyses, randomized or credible quasi-experimental studies, government evaluations, and major implementation syntheses relevant to U.S. delivery.",
+        "exclusion_criteria": "Testimonials, charity marketing, uncontrolled output counts used as impact evidence, inaccessible claims without traceable citations, and studies with no relevant outcome.",
+        "screening_process": "Single-reviewer Phase 3 prototype with structured extraction; grades requiring Strong or Potentially Harmful receive mandatory second review before publication or recommendation use.",
+        "risk_of_bias_method": "Design, assignment, baseline balance, attrition, outcome validity, selective reporting, confounding, replication, and applicability assessed narratively under the evidence-grading method.",
+        "protocol_deviations": "This is a rapid single-reviewer prototype map, not a completed systematic review. Searches were targeted rather than exhaustive and no dual screening or formal meta-analysis was performed.",
+        "missing_literature_risks": "Publication bias, incomplete grey-literature capture, English-language bias, and fast-changing policy or drug-market contexts."
+      },
+      "reviewers": {
+        "lead": "Repository implementation prototype; named human reviewer pending",
+        "conflicts": "No charity-specific financial interests assessed in this phase.",
+        "outside_review_status": "Not yet externally reviewed",
+        "next_review_due": "2027-06-12"
+      },
+      "plain_language_summary": "This is not a charity recommendation. This map compares intervention categories, not charities. Grades describe the current direction and credibility of evidence; they are not rankings and do not establish marginal cost-effectiveness or room for more funding.",
+      "metrics": [
+        {
+          "metric_id": "H-M1",
+          "name": "Nights stably housed",
+          "unit": "nights/person-year",
+          "importance": "primary",
+          "notes": "Define housing quality and whether institutional stays count."
+        },
+        {
+          "metric_id": "H-M2",
+          "name": "Returns to homelessness",
+          "unit": "share returning within 12–36 months",
+          "importance": "primary",
+          "notes": "Report denominator and administrative-data coverage."
+        },
+        {
+          "metric_id": "H-M3",
+          "name": "Health and acute-service use",
+          "unit": "ED visits, hospital days, deaths",
+          "importance": "secondary",
+          "notes": "Do not equate lower public spending with wellbeing."
+        }
+      ],
+      "interventions": [
+        {
+          "intervention_id": "H-I1",
+          "name": "Long-term rental subsidy for homeless families",
+          "definition": "Deep, sustained rental assistance reduces rent burden and enables rapid exit from shelter.",
+          "theory_of_change": "Deep, sustained rental assistance reduces rent burden and enables rapid exit from shelter.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Housing stability, family separation, psychological distress, and economic outcomes over 20–37 months.",
+          "key_study_ids": [
+            "HOM-03"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "HUD Family Options found large, durable reductions in homelessness and shelter use; effects on adult employment were not comparably large.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Adequate affordable units, landlord participation, timely placement, and benefit continuity.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Possible neighborhood constraint or benefit cliffs; monitor housing quality and involuntary moves.",
+          "evidence_grade": "Strong",
+          "grade_rationale": "Strong: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "Families in shelter for whom affordability is the binding constraint.",
+          "cases_where_not_to_use": "Do not substitute a time-limited service package when the principal barrier is unaffordable rent.",
+          "confidence": "high",
+          "open_research_questions": [
+            "Effects in tight rental markets",
+            "Long-run child outcomes and housing quality"
+          ],
+          "primary_metric_ids": [
+            "H-M1",
+            "H-M2"
+          ]
+        },
+        {
+          "intervention_id": "H-I2",
+          "name": "Permanent supportive housing / Housing First",
+          "definition": "Offer permanent, non-abstinence-contingent housing with voluntary support to people with disabling conditions and chronic homelessness.",
+          "theory_of_change": "Offer permanent, non-abstinence-contingent housing with voluntary support to people with disabling conditions and chronic homelessness.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Housing stability, homelessness, health, substance use, and health-service use over 12–24+ months.",
+          "key_study_ids": [
+            "HOM-01",
+            "HOM-02"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "Reviews consistently find substantially better housing stability; health and substance-use effects are smaller or imprecise, while some acute-care use falls.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Permanent housing supply, rent subsidy, low-barrier enrollment, assertive voluntary services, and fidelity to consumer choice.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Isolation, poor housing quality, weak harm-reduction practice, and coercive service drift can erode benefits.",
+          "evidence_grade": "Strong",
+          "grade_rationale": "Strong: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "People with chronic homelessness and significant disabilities who want permanent housing.",
+          "cases_where_not_to_use": "Do not claim that housing alone reliably treats substance use or mental illness.",
+          "confidence": "high",
+          "open_research_questions": [
+            "Which service intensity adds wellbeing",
+            "Mortality and fentanyl-era outcomes",
+            "Youth-specific models"
+          ],
+          "primary_metric_ids": [
+            "H-M1",
+            "H-M2",
+            "H-M3"
+          ]
+        },
+        {
+          "intervention_id": "H-I3",
+          "name": "Critical Time Intervention / time-limited transition case management",
+          "definition": "A structured transition worker strengthens community ties during discharge from institutions or shelters.",
+          "theory_of_change": "A structured transition worker strengthens community ties during discharge from institutions or shelters.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Homelessness recurrence, continuity of care, and psychiatric symptoms over roughly 9–18 months.",
+          "key_study_ids": [
+            "HOM-04"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "Multiple trials suggest fewer homeless nights or episodes, but samples and settings are narrower than for housing interventions.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Trained case managers, phased handoff, small caseloads, and available community services and housing.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Case management cannot overcome absent housing; abrupt handoff can create discontinuity.",
+          "evidence_grade": "Moderate",
+          "grade_rationale": "Moderate: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "High-risk transitions where concrete resources exist but coordination is weak.",
+          "cases_where_not_to_use": "Do not use as a replacement for a needed subsidy or permanent housing.",
+          "confidence": "moderate",
+          "open_research_questions": [
+            "Replication by subgroup",
+            "Optimal caseload and transition length"
+          ],
+          "primary_metric_ids": [
+            "H-M1",
+            "H-M2"
+          ]
+        },
+        {
+          "intervention_id": "H-I4",
+          "name": "Targeted eviction prevention with flexible cash and legal triage",
+          "definition": "Use risk screening plus short-term financial or legal help to prevent an imminent avoidable loss of housing.",
+          "theory_of_change": "Use risk screening plus short-term financial or legal help to prevent an imminent avoidable loss of housing.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Eviction filings, shelter entry, and housing stability over 6–18 months.",
+          "key_study_ids": [
+            "HOM-04"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "Credible local evaluations are encouraging, but targeting rules, counterfactual risk, and program bundles vary.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Fast flexible funds, valid risk triage, landlord negotiation, legal referral, and safeguards against discrimination.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Poor targeting may pay cases that would resolve anyway or exclude people with the highest barriers.",
+          "evidence_grade": "Promising",
+          "grade_rationale": "Promising: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "Households with a resolvable short-term shock and credible imminent displacement risk.",
+          "cases_where_not_to_use": "Do not treat one-time cash as sufficient for a persistent rent-income gap.",
+          "confidence": "moderate",
+          "open_research_questions": [
+            "Validated targeting thresholds",
+            "Comparative effects of cash, counsel, and mediation"
+          ],
+          "primary_metric_ids": [
+            "H-M2"
+          ]
+        },
+        {
+          "intervention_id": "H-I5",
+          "name": "Congregate transitional housing with mandatory treatment or abstinence",
+          "definition": "Require residence in temporary group housing and compliance before access to permanent housing.",
+          "theory_of_change": "Require residence in temporary group housing and compliance before access to permanent housing.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Program completion, housing stability, substance use, safety, and exits over 6–24 months.",
+          "key_study_ids": [
+            "HOM-01",
+            "HOM-04"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "Some participants benefit from structured settings, but comparative evidence does not support a universal treatment-first sequence and attrition can be selective.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Safe facilities, participant choice, qualified care, clear exit pathways, and protection from discharge to homelessness.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Coercion, family separation, institutional conflict, and loss of shelter after relapse or rule violations.",
+          "evidence_grade": "Mixed",
+          "grade_rationale": "Mixed: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "Voluntary, preference-concordant transitional options with a defined permanent-housing path.",
+          "cases_where_not_to_use": "Do not make abstinence or treatment compliance a blanket precondition for permanent housing.",
+          "confidence": "moderate",
+          "open_research_questions": [
+            "Who prefers and benefits from congregate models",
+            "Harms among non-completers"
+          ],
+          "primary_metric_ids": [
+            "H-M1",
+            "H-M2"
+          ]
+        },
+        {
+          "intervention_id": "H-I6",
+          "name": "Punitive encampment displacement without housing offer",
+          "definition": "Clear encampments through citation, arrest, property disposal, or forced movement without a viable housing placement.",
+          "theory_of_change": "Clear encampments through citation, arrest, property disposal, or forced movement without a viable housing placement.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Mortality, service continuity, property loss, shelter entry, and subsequent homelessness.",
+          "key_study_ids": [
+            "HOM-04"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "Direct causal estimates remain limited, but displacement disrupts medication, documents, outreach, and social ties while not resolving housing need; plausible harms dominate absent placement.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "If any site closure occurs, due process, storage, sanitation, outreach, and acceptable housing offers are minimum safeguards.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Loss of possessions and medication, trauma, criminal-legal debt, geographic displacement, and reduced service engagement.",
+          "evidence_grade": "Potentially Harmful",
+          "grade_rationale": "Potentially Harmful: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "No recommended charitable use as a standalone homelessness intervention.",
+          "cases_where_not_to_use": "Do not fund or describe displacement alone as housing resolution.",
+          "confidence": "moderate",
+          "open_research_questions": [
+            "Prospective U.S. mortality and health studies",
+            "Effects of paired housing offers and due-process safeguards"
+          ],
+          "primary_metric_ids": [
+            "H-M2",
+            "H-M3"
+          ]
+        }
+      ],
+      "research_gaps": [
+        "Few head-to-head cost studies",
+        "Limited mortality and quality-of-life follow-up",
+        "Underrepresentation of rural areas, youth, LGBTQ+ people, and people exiting institutions",
+        "Need to distinguish housing stability from treatment outcomes"
+      ],
+      "update_triggers": [
+        "Major systematic review or U.S. trial",
+        "Material harm signal",
+        "Policy or implementation change affecting applicability",
+        "Scheduled review date"
+      ],
+      "publication_guardrails": [
+        "Do not use to recommend a charity without a charity-specific applicability assessment.",
+        "Do not compare grades as if they were cost-effectiveness scores.",
+        "Separate participant wellbeing from government fiscal effects.",
+        "Strong and Potentially Harmful grades require second review before public reliance."
+      ]
+    },
+    {
+      "schema_version": "0.1.0",
+      "map_id": "evidence-map-criminal-recidivism",
+      "cause_area": "criminal_recidivism_reentry",
+      "status": "draft_internal_not_for_charity_ranking",
+      "review_question": "For people leaving incarceration or under community supervision in the United States, which interventions reduce new offending and improve durable reintegration without causing disproportionate harm?",
+      "population_geography": "Adults and youth returning from U.S. prisons or jails and people under community supervision.",
+      "search": {
+        "search_dates": [
+          "2026-06-12"
+        ],
+        "evidence_cutoff": "2026-06-12",
+        "repositories": [
+          "PubMed",
+          "Campbell Collaboration",
+          "U.S. federal evidence repositories",
+          "National Academies",
+          "targeted citation chaining"
+        ],
+        "search_strings": [
+          "cause area + intervention + systematic review",
+          "cause area + randomized evaluation",
+          "intervention + harm + United States"
+        ],
+        "inclusion_criteria": "Public systematic reviews, meta-analyses, randomized or credible quasi-experimental studies, government evaluations, and major implementation syntheses relevant to U.S. delivery.",
+        "exclusion_criteria": "Testimonials, charity marketing, uncontrolled output counts used as impact evidence, inaccessible claims without traceable citations, and studies with no relevant outcome.",
+        "screening_process": "Single-reviewer Phase 3 prototype with structured extraction; grades requiring Strong or Potentially Harmful receive mandatory second review before publication or recommendation use.",
+        "risk_of_bias_method": "Design, assignment, baseline balance, attrition, outcome validity, selective reporting, confounding, replication, and applicability assessed narratively under the evidence-grading method.",
+        "protocol_deviations": "This is a rapid single-reviewer prototype map, not a completed systematic review. Searches were targeted rather than exhaustive and no dual screening or formal meta-analysis was performed.",
+        "missing_literature_risks": "Publication bias, incomplete grey-literature capture, English-language bias, and fast-changing policy or drug-market contexts."
+      },
+      "reviewers": {
+        "lead": "Repository implementation prototype; named human reviewer pending",
+        "conflicts": "No charity-specific financial interests assessed in this phase.",
+        "outside_review_status": "Not yet externally reviewed",
+        "next_review_due": "2027-06-12"
+      },
+      "plain_language_summary": "This is not a charity recommendation. This map compares intervention categories, not charities. Grades describe the current direction and credibility of evidence; they are not rankings and do not establish marginal cost-effectiveness or room for more funding.",
+      "metrics": [
+        {
+          "metric_id": "R-M1",
+          "name": "New criminal offense",
+          "unit": "rearrest/reconviction share and time-to-event",
+          "importance": "primary",
+          "notes": "Report each definition; technical violations are separate."
+        },
+        {
+          "metric_id": "R-M2",
+          "name": "Stable employment",
+          "unit": "quarters employed and earnings",
+          "importance": "secondary",
+          "notes": "Employment is valuable even without recidivism effects."
+        },
+        {
+          "metric_id": "R-M3",
+          "name": "Stable housing and treatment retention",
+          "unit": "days housed; treatment retention",
+          "importance": "secondary",
+          "notes": "Measure participant wellbeing as well as system outcomes."
+        }
+      ],
+      "interventions": [
+        {
+          "intervention_id": "R-I1",
+          "name": "Risk-need-responsivity aligned cognitive behavioral programming",
+          "definition": "Structured CBT addresses criminogenic thinking and skills, targeted to assessed risk and need with trained facilitators.",
+          "theory_of_change": "Structured CBT addresses criminogenic thinking and skills, targeted to assessed risk and need with trained facilitators.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Reoffending over about 12–36 months.",
+          "key_study_ids": [
+            "REE-01",
+            "REE-02"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "Meta-analyses generally find lower recidivism, with stronger effects when implementation quality and risk targeting are good.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Validated assessment, trained staff, adequate dosage, quality assurance, and avoidance of over-serving low-risk participants.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Poorly delivered groups, inappropriate mixing, or coercive participation can waste time or worsen peer effects.",
+          "evidence_grade": "Strong",
+          "grade_rationale": "Strong: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "People with assessed criminogenic needs, using a validated and culturally responsive model.",
+          "cases_where_not_to_use": "Do not apply solely on offense label or use untrained generic discussion groups.",
+          "confidence": "high",
+          "open_research_questions": [
+            "Effects for women and diverse groups",
+            "Routine-practice fidelity and long-term effects"
+          ],
+          "primary_metric_ids": [
+            "R-M1"
+          ]
+        },
+        {
+          "intervention_id": "R-I2",
+          "name": "Correctional education with recognized credentials",
+          "definition": "Provide adult basic education, secondary completion, postsecondary, or vocational education linked to usable credentials.",
+          "theory_of_change": "Provide adult basic education, secondary completion, postsecondary, or vocational education linked to usable credentials.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Recidivism, employment, earnings, and educational attainment after release.",
+          "key_study_ids": [
+            "REE-06"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "Meta-analysis associates participation with lower recidivism and improved employment, but much evidence is quasi-experimental and programs differ.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Qualified instructors, access across sentence lengths, transferable credits, technology, and employer-recognized credentials.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Exclusion by custody status, inaccessible materials, and credentials disconnected from labor demand.",
+          "evidence_grade": "Moderate",
+          "grade_rationale": "Moderate: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "Learners who opt in and can continue or use credentials after release.",
+          "cases_where_not_to_use": "Do not treat enrollment or completion alone as proof of reduced offending.",
+          "confidence": "moderate",
+          "open_research_questions": [
+            "Modern randomized or discontinuity studies",
+            "Credential-specific earnings effects"
+          ],
+          "primary_metric_ids": [
+            "R-M1",
+            "R-M2"
+          ]
+        },
+        {
+          "intervention_id": "R-I3",
+          "name": "Medication treatment for opioid use disorder during custody and reentry",
+          "definition": "Initiate or continue methadone or buprenorphine and ensure uninterrupted community linkage after release.",
+          "theory_of_change": "Initiate or continue methadone or buprenorphine and ensure uninterrupted community linkage after release.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Treatment retention, illicit opioid use, overdose, mortality, and reincarceration after release.",
+          "key_study_ids": [
+            "DRG-01",
+            "DRG-02"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "The mortality evidence for opioid agonist treatment is strong; post-release continuity is especially important during high-risk transition periods.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "All approved medications, consent, clinical staffing, prerelease enrollment, naloxone, and warm handoff without forced taper.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Forced withdrawal and treatment interruption elevate relapse and overdose risk.",
+          "evidence_grade": "Strong",
+          "grade_rationale": "Strong: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "People with OUD who choose medication, including those already stable on it.",
+          "cases_where_not_to_use": "Do not require abstinence-only detoxification or discontinue effective medication at release.",
+          "confidence": "high",
+          "open_research_questions": [
+            "Best linkage models",
+            "Fentanyl-era dosing and retention"
+          ],
+          "primary_metric_ids": [
+            "R-M1",
+            "R-M3"
+          ]
+        },
+        {
+          "intervention_id": "R-I4",
+          "name": "Transitional jobs as a standalone recidivism strategy",
+          "definition": "Offer short-term subsidized work plus placement assistance immediately after release.",
+          "theory_of_change": "Offer short-term subsidized work plus placement assistance immediately after release.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Employment, earnings, arrests, convictions, and incarceration over 1–3 years.",
+          "key_study_ids": [
+            "REE-03",
+            "REE-04"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "Large U.S. trials often improve short-term employment but show null or fading recidivism effects.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Paid work, payroll reliability, employer links, coaching, and transition to unsubsidized jobs.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Low wages, abrupt job loss, and opportunity costs if participation crowds out better employment.",
+          "evidence_grade": "Weak",
+          "grade_rationale": "Weak: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "Use when employment and income are valued outcomes, while testing additions that address other needs.",
+          "cases_where_not_to_use": "Do not market a short transitional job alone as a proven recidivism intervention.",
+          "confidence": "high",
+          "open_research_questions": [
+            "Which employer-linked models produce durable earnings",
+            "Effects of combining CBT, housing, or record relief"
+          ],
+          "primary_metric_ids": [
+            "R-M1",
+            "R-M2"
+          ]
+        },
+        {
+          "intervention_id": "R-I5",
+          "name": "Peer navigation and comprehensive reentry support",
+          "definition": "A trained peer or case manager coordinates IDs, benefits, housing, care, transport, and supervision requirements.",
+          "theory_of_change": "A trained peer or case manager coordinates IDs, benefits, housing, care, transport, and supervision requirements.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Service connection, housing, treatment retention, employment, and recidivism over 6–24 months.",
+          "key_study_ids": [
+            "REE-03"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "Multicomponent studies show some short-term domain gains, but causal attribution and replication are limited.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Low caseloads, lived-experience support, flexible funds, cross-agency agreements, and participant-led goals.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Surveillance disguised as support, confidentiality breaches, and referral without actual service capacity.",
+          "evidence_grade": "Promising",
+          "grade_rationale": "Promising: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "People facing simultaneous administrative and service barriers after release.",
+          "cases_where_not_to_use": "Do not assume referrals equal receipt or that a broad bundle identifies its active ingredient.",
+          "confidence": "moderate",
+          "open_research_questions": [
+            "Peer-specific randomized evidence",
+            "Effects on wellbeing and technical violations"
+          ],
+          "primary_metric_ids": [
+            "R-M2",
+            "R-M3"
+          ]
+        },
+        {
+          "intervention_id": "R-I6",
+          "name": "Scared Straight and confrontational prison visitation",
+          "definition": "Expose youth to prisons and confrontational messages to deter offending through fear.",
+          "theory_of_change": "Expose youth to prisons and confrontational messages to deter offending through fear.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Subsequent delinquency, arrest, or conviction.",
+          "key_study_ids": [
+            "REE-05"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "Randomized evidence indicates visits can increase later offending relative to no intervention.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "No implementation pathway makes the core fear-based model advisable; replace it with developmentally appropriate services.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Increased offending, trauma, humiliation, and normalization of criminal identity.",
+          "evidence_grade": "Potentially Harmful",
+          "grade_rationale": "Potentially Harmful: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "No recommended use.",
+          "cases_where_not_to_use": "Do not provide prison tours or intimidation as delinquency prevention.",
+          "confidence": "high",
+          "open_research_questions": [
+            "Monitor rebranding of similar confrontational models"
+          ],
+          "primary_metric_ids": [
+            "R-M1"
+          ]
+        }
+      ],
+      "research_gaps": [
+        "Need consistent recidivism definitions and technical-violation reporting",
+        "Limited evidence on participant wellbeing and family outcomes",
+        "Sparse subgroup effects and implementation-cost data",
+        "Need head-to-head studies of reentry bundles"
+      ],
+      "update_triggers": [
+        "Major systematic review or U.S. trial",
+        "Material harm signal",
+        "Policy or implementation change affecting applicability",
+        "Scheduled review date"
+      ],
+      "publication_guardrails": [
+        "Do not use to recommend a charity without a charity-specific applicability assessment.",
+        "Do not compare grades as if they were cost-effectiveness scores.",
+        "Separate participant wellbeing from government fiscal effects.",
+        "Strong and Potentially Harmful grades require second review before public reliance."
+      ]
+    },
+    {
+      "schema_version": "0.1.0",
+      "map_id": "evidence-map-criminal-justice",
+      "cause_area": "criminal_justice",
+      "status": "draft_internal_not_for_charity_ranking",
+      "review_question": "Which community and system interventions reduce violence or improve justice-system legitimacy in the United States while minimizing coercion, inequity, and individual harm?",
+      "population_geography": "U.S. communities, victims, people exposed to police or courts, and justice agencies.",
+      "search": {
+        "search_dates": [
+          "2026-06-12"
+        ],
+        "evidence_cutoff": "2026-06-12",
+        "repositories": [
+          "PubMed",
+          "Campbell Collaboration",
+          "U.S. federal evidence repositories",
+          "National Academies",
+          "targeted citation chaining"
+        ],
+        "search_strings": [
+          "cause area + intervention + systematic review",
+          "cause area + randomized evaluation",
+          "intervention + harm + United States"
+        ],
+        "inclusion_criteria": "Public systematic reviews, meta-analyses, randomized or credible quasi-experimental studies, government evaluations, and major implementation syntheses relevant to U.S. delivery.",
+        "exclusion_criteria": "Testimonials, charity marketing, uncontrolled output counts used as impact evidence, inaccessible claims without traceable citations, and studies with no relevant outcome.",
+        "screening_process": "Single-reviewer Phase 3 prototype with structured extraction; grades requiring Strong or Potentially Harmful receive mandatory second review before publication or recommendation use.",
+        "risk_of_bias_method": "Design, assignment, baseline balance, attrition, outcome validity, selective reporting, confounding, replication, and applicability assessed narratively under the evidence-grading method.",
+        "protocol_deviations": "This is a rapid single-reviewer prototype map, not a completed systematic review. Searches were targeted rather than exhaustive and no dual screening or formal meta-analysis was performed.",
+        "missing_literature_risks": "Publication bias, incomplete grey-literature capture, English-language bias, and fast-changing policy or drug-market contexts."
+      },
+      "reviewers": {
+        "lead": "Repository implementation prototype; named human reviewer pending",
+        "conflicts": "No charity-specific financial interests assessed in this phase.",
+        "outside_review_status": "Not yet externally reviewed",
+        "next_review_due": "2027-06-12"
+      },
+      "plain_language_summary": "This is not a charity recommendation. This map compares intervention categories, not charities. Grades describe the current direction and credibility of evidence; they are not rankings and do not establish marginal cost-effectiveness or room for more funding.",
+      "metrics": [
+        {
+          "metric_id": "J-M1",
+          "name": "Victimization and serious crime",
+          "unit": "incidents or victims per place/person-time",
+          "importance": "primary",
+          "notes": "Prefer victimization and serious harm to raw enforcement counts."
+        },
+        {
+          "metric_id": "J-M2",
+          "name": "Legitimacy and procedural justice",
+          "unit": "validated trust/fairness/cooperation scales",
+          "importance": "primary",
+          "notes": "Measure among people directly exposed, disaggregated by race."
+        },
+        {
+          "metric_id": "J-M3",
+          "name": "Justice-system harms",
+          "unit": "uses of force, stops, arrests, detention days, injuries",
+          "importance": "primary",
+          "notes": "Harms are outcomes, not implementation footnotes."
+        }
+      ],
+      "interventions": [
+        {
+          "intervention_id": "J-I1",
+          "name": "Problem-oriented hot-spots policing with community safeguards",
+          "definition": "Concentrate analysis and tailored problem-solving on small high-harm places rather than broad population-wide enforcement.",
+          "theory_of_change": "Concentrate analysis and tailored problem-solving on small high-harm places rather than broad population-wide enforcement.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Crime and disorder at treated places, displacement, and community response over months to years.",
+          "key_study_ids": [
+            "CJ-01",
+            "CJ-04"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "A large mostly U.S. evidence base finds small but reliable place-level crime reductions and little net displacement; problem-oriented tactics outperform simple enforcement increases.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Accurate place analysis, tailored non-enforcement options, supervision, narrow scope, and monitoring of stops, force, and community response.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Aggressive tactics can impose concentrated burdens even when place-level crime falls.",
+          "evidence_grade": "Strong",
+          "grade_rationale": "Strong: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "High-harm micro-places using the least coercive effective response and transparent equity monitoring.",
+          "cases_where_not_to_use": "Do not infer support for zero-tolerance sweeps or indiscriminate stops.",
+          "confidence": "high",
+          "open_research_questions": [
+            "Long-run community effects",
+            "Tactic-level cost and harm comparisons"
+          ],
+          "primary_metric_ids": [
+            "J-M1",
+            "J-M2",
+            "J-M3"
+          ]
+        },
+        {
+          "intervention_id": "J-I2",
+          "name": "Focused deterrence / group violence intervention",
+          "definition": "Deliver a clear violence-focused message to a small high-risk network alongside credible services and narrowly targeted enforcement.",
+          "theory_of_change": "Deliver a clear violence-focused message to a small high-risk network alongside credible services and narrowly targeted enforcement.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Shootings, homicides, and violent offending over 1–3 years.",
+          "key_study_ids": [
+            "CJ-02"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "Systematic syntheses generally find violence reductions, but designs are often quasi-experimental and implementation packages vary.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Accurate and fair identification, community partnership, genuine services, procedural safeguards, and narrow focus on serious violence.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Network misclassification, collective punishment, surveillance spillovers, and inequitable enforcement.",
+          "evidence_grade": "Moderate",
+          "grade_rationale": "Moderate: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "Concentrated serious violence where governance and service commitments are credible.",
+          "cases_where_not_to_use": "Do not use broad gang labels or enforcement without a meaningful support offer.",
+          "confidence": "moderate",
+          "open_research_questions": [
+            "Independent replications",
+            "Effects on legitimacy and non-targeted network members"
+          ],
+          "primary_metric_ids": [
+            "J-M1",
+            "J-M2",
+            "J-M3"
+          ]
+        },
+        {
+          "intervention_id": "J-I3",
+          "name": "Voluntary restorative justice conferencing",
+          "definition": "Facilitated voluntary dialogue seeks accountability, repair, and victim voice after responsibility is accepted.",
+          "theory_of_change": "Facilitated voluntary dialogue seeks accountability, repair, and victim voice after responsibility is accepted.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Victim satisfaction, trauma, restitution, and repeat offending over 6–24 months.",
+          "key_study_ids": [
+            "CJ-05"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "Trials and reviews suggest improved victim satisfaction and possible recidivism reductions, but eligibility, offense, and facilitation matter.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Voluntary informed consent, trained neutral facilitators, safety screening, support persons, and no penalty for declining.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Coercion, unsafe contact, pressure to forgive, confidentiality failures, and unequal bargaining power.",
+          "evidence_grade": "Promising",
+          "grade_rationale": "Promising: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "Cases where the harmed person wants the process and safety screening supports it.",
+          "cases_where_not_to_use": "Do not mandate participation or use where power imbalance and safety cannot be managed.",
+          "confidence": "moderate",
+          "open_research_questions": [
+            "Serious-violence subgroups",
+            "Long-term victim wellbeing",
+            "Facilitator fidelity"
+          ],
+          "primary_metric_ids": [
+            "J-M1",
+            "J-M2"
+          ]
+        },
+        {
+          "intervention_id": "J-I4",
+          "name": "Procedural-justice training alone",
+          "definition": "Train officers or court actors to explain decisions, show neutrality and respect, and allow voice.",
+          "theory_of_change": "Train officers or court actors to explain decisions, show neutrality and respect, and allow voice.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Observed behavior, public trust, complaints, use of force, and crime.",
+          "key_study_ids": [
+            "CJ-02"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "Training can improve some attitudes or behaviors, but field results are inconsistent and organizational incentives may overwhelm classroom content.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Scenario practice, supervisor reinforcement, policy alignment, body-camera audit, and community-defined outcomes.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Symbolic training may legitimize unchanged harmful practices or shift responsibility from systems to individuals.",
+          "evidence_grade": "Mixed",
+          "grade_rationale": "Mixed: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "As one component of structural supervision and accountability reform.",
+          "cases_where_not_to_use": "Do not treat attendance or attitude surveys as evidence of community impact.",
+          "confidence": "moderate",
+          "open_research_questions": [
+            "Durable behavior change",
+            "Effects among directly stopped people",
+            "Organizational complements"
+          ],
+          "primary_metric_ids": [
+            "J-M2",
+            "J-M3"
+          ]
+        },
+        {
+          "intervention_id": "J-I5",
+          "name": "Broad pedestrian stop / stop-question-frisk campaigns",
+          "definition": "Increase police-initiated pedestrian stops broadly to detect weapons or deter crime.",
+          "theory_of_change": "Increase police-initiated pedestrian stops broadly to detect weapons or deter crime.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Crime at places plus mental health, attitudes, later behavior, and disparities among stopped people.",
+          "key_study_ids": [
+            "CJ-03",
+            "CJ-02"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "The 2023 review finds some place-level crime effects but adverse individual effects and a weaker benefit-harm profile than alternatives.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "If stops occur, individualized legal basis, respectful conduct, documentation, supervision, and disparity review are essential.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Fear, trauma, reduced legitimacy, racial disparity, legal violations, and possible adverse behavioral effects.",
+          "evidence_grade": "Potentially Harmful",
+          "grade_rationale": "Potentially Harmful: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "No recommended use as a broad charitable crime-prevention strategy.",
+          "cases_where_not_to_use": "Do not fund quotas, indiscriminate stops, or infer citywide benefit from narrow place effects.",
+          "confidence": "high",
+          "open_research_questions": [
+            "Long-term health and cooperation effects",
+            "Causal disparity mechanisms"
+          ],
+          "primary_metric_ids": [
+            "J-M1",
+            "J-M2",
+            "J-M3"
+          ]
+        },
+        {
+          "intervention_id": "J-I6",
+          "name": "Community violence interruption without a specified model",
+          "definition": "Employ credible messengers for outreach, mediation, and service linkage to interrupt retaliation.",
+          "theory_of_change": "Employ credible messengers for outreach, mediation, and service linkage to interrupt retaliation.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Shootings, victimization, mediation success, and participant wellbeing.",
+          "key_study_ids": [
+            "CJ-02"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "Some programs report favorable changes, but model variation, weak counterfactuals, spillovers, and inconsistent results prevent a general grade.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Clear model, worker safety and pay, supervision, service capacity, incident protocols, and independent evaluation.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Worker exposure to violence, surveillance concerns, retaliation risk, and overclaiming prevented shootings.",
+          "evidence_grade": "Insufficient Evidence",
+          "grade_rationale": "Insufficient Evidence: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "Use only with a defined model, safeguards, and credible evaluation.",
+          "cases_where_not_to_use": "Do not count contacts or mediations as equivalent to prevented violence.",
+          "confidence": "moderate",
+          "open_research_questions": [
+            "Cluster trials or strong quasi-experiments",
+            "Worker safety and participant outcomes"
+          ],
+          "primary_metric_ids": [
+            "J-M1",
+            "J-M3"
+          ]
+        }
+      ],
+      "research_gaps": [
+        "Crime outcomes dominate while legitimacy and health are undermeasured",
+        "Few full benefit-harm and cost studies",
+        "Need disaggregated effects and legal-compliance measures",
+        "Implementation labels hide major tactic variation"
+      ],
+      "update_triggers": [
+        "Major systematic review or U.S. trial",
+        "Material harm signal",
+        "Policy or implementation change affecting applicability",
+        "Scheduled review date"
+      ],
+      "publication_guardrails": [
+        "Do not use to recommend a charity without a charity-specific applicability assessment.",
+        "Do not compare grades as if they were cost-effectiveness scores.",
+        "Separate participant wellbeing from government fiscal effects.",
+        "Strong and Potentially Harmful grades require second review before public reliance."
+      ]
+    },
+    {
+      "schema_version": "0.1.0",
+      "map_id": "evidence-map-legal-immigrants",
+      "cause_area": "legal_immigrant_integration",
+      "status": "draft_internal_not_for_charity_ranking",
+      "review_question": "For lawfully present immigrants and naturalization-eligible residents in the United States, which voluntary services improve language, legal access, economic security, and civic participation without exposing clients to fraud or immigration harm?",
+      "population_geography": "Lawful permanent residents, refugees, asylees, and other lawfully present immigrants in the United States; legal eligibility varies by service.",
+      "search": {
+        "search_dates": [
+          "2026-06-12"
+        ],
+        "evidence_cutoff": "2026-06-12",
+        "repositories": [
+          "PubMed",
+          "Campbell Collaboration",
+          "U.S. federal evidence repositories",
+          "National Academies",
+          "targeted citation chaining"
+        ],
+        "search_strings": [
+          "cause area + intervention + systematic review",
+          "cause area + randomized evaluation",
+          "intervention + harm + United States"
+        ],
+        "inclusion_criteria": "Public systematic reviews, meta-analyses, randomized or credible quasi-experimental studies, government evaluations, and major implementation syntheses relevant to U.S. delivery.",
+        "exclusion_criteria": "Testimonials, charity marketing, uncontrolled output counts used as impact evidence, inaccessible claims without traceable citations, and studies with no relevant outcome.",
+        "screening_process": "Single-reviewer Phase 3 prototype with structured extraction; grades requiring Strong or Potentially Harmful receive mandatory second review before publication or recommendation use.",
+        "risk_of_bias_method": "Design, assignment, baseline balance, attrition, outcome validity, selective reporting, confounding, replication, and applicability assessed narratively under the evidence-grading method.",
+        "protocol_deviations": "This is a rapid single-reviewer prototype map, not a completed systematic review. Searches were targeted rather than exhaustive and no dual screening or formal meta-analysis was performed.",
+        "missing_literature_risks": "Publication bias, incomplete grey-literature capture, English-language bias, and fast-changing policy or drug-market contexts."
+      },
+      "reviewers": {
+        "lead": "Repository implementation prototype; named human reviewer pending",
+        "conflicts": "No charity-specific financial interests assessed in this phase.",
+        "outside_review_status": "Not yet externally reviewed",
+        "next_review_due": "2027-06-12"
+      },
+      "plain_language_summary": "This is not a charity recommendation. This map compares intervention categories, not charities. Grades describe the current direction and credibility of evidence; they are not rankings and do not establish marginal cost-effectiveness or room for more funding.",
+      "metrics": [
+        {
+          "metric_id": "I-M1",
+          "name": "Language and economic integration",
+          "unit": "validated English gain, earnings, employment",
+          "importance": "primary",
+          "notes": "Report baseline proficiency and attendance."
+        },
+        {
+          "metric_id": "I-M2",
+          "name": "Accurate legal completion",
+          "unit": "eligible applications filed/approved without avoidable error",
+          "importance": "primary",
+          "notes": "Application volume alone can reward inappropriate filing."
+        },
+        {
+          "metric_id": "I-M3",
+          "name": "Civic and social integration",
+          "unit": "naturalization, voting, belonging, service access",
+          "importance": "secondary",
+          "notes": "Naturalization is not a proxy for all integration."
+        }
+      ],
+      "interventions": [
+        {
+          "intervention_id": "I-I1",
+          "name": "Accessible adult English language instruction",
+          "definition": "Offer sustained, level-appropriate adult English instruction with practical language use and supports for attendance.",
+          "theory_of_change": "Offer sustained, level-appropriate adult English instruction with practical language use and supports for attendance.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "English skill, earnings, employment, and civic participation over multiple years.",
+          "key_study_ids": [
+            "IMM-01"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "A U.S. lottery study found large earnings and voting gains, but it is the first standalone U.S. randomized evaluation and comes from one program.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Qualified teachers, level placement, sufficient hours, childcare, transport, flexible schedules, and learner retention.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Scheduling burdens, exclusion by literacy or disability, and pressure to abandon home languages.",
+          "evidence_grade": "Moderate",
+          "grade_rationale": "Moderate: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "Adults who want English instruction, with practical supports and appropriate level placement.",
+          "cases_where_not_to_use": "Do not promise the single-study earnings effect in every setting.",
+          "confidence": "moderate",
+          "open_research_questions": [
+            "Multi-site replication",
+            "Which modalities work by baseline literacy",
+            "Wellbeing and family effects"
+          ],
+          "primary_metric_ids": [
+            "I-M1",
+            "I-M3"
+          ]
+        },
+        {
+          "intervention_id": "I-I2",
+          "name": "Naturalization fee assistance with eligibility screening",
+          "definition": "Cover application fees or help eligible applicants obtain a fee waiver, paired with accurate screening.",
+          "theory_of_change": "Cover application fees or help eligible applicants obtain a fee waiver, paired with accurate screening.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Naturalization applications and completions over roughly 1–3 years.",
+          "key_study_ids": [
+            "IMM-02",
+            "IMM-03"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "A randomized New York study found vouchers roughly doubled application rates among eligible low-income registrants; national fee-waiver simplification evidence supports the affordability mechanism.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Accredited legal screening, current fee rules, document support, and tracking through adjudication.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Ineligible or error-filled filings can waste funds or create legal risk; downstream economic gains should not be assumed.",
+          "evidence_grade": "Strong",
+          "grade_rationale": "Strong: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "Eligible low-income permanent residents who want to naturalize and face a binding fee barrier.",
+          "cases_where_not_to_use": "Do not offer filing incentives without individualized eligibility and risk screening.",
+          "confidence": "high",
+          "open_research_questions": [
+            "Replication under current fee rules",
+            "Completion and long-term wellbeing effects"
+          ],
+          "primary_metric_ids": [
+            "I-M2",
+            "I-M3"
+          ]
+        },
+        {
+          "intervention_id": "I-I3",
+          "name": "Qualified immigration legal representation",
+          "definition": "Provide representation by licensed attorneys or DOJ-accredited representatives for removal defense or complex benefits matters.",
+          "theory_of_change": "Provide representation by licensed attorneys or DOJ-accredited representatives for removal defense or complex benefits matters.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Case participation, release, relief, and legal outcomes through case completion.",
+          "key_study_ids": [
+            "IMM-04"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "Large observational studies show substantial representation-outcome associations, but selection, case strength, judge, detention, and local context complicate causal interpretation.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Licensed or accredited providers, supervision, language access, manageable caseloads, confidentiality, and malpractice safeguards.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Poor advice, missed deadlines, conflicts, or disclosure can cause irreversible immigration harm.",
+          "evidence_grade": "Promising",
+          "grade_rationale": "Promising: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "Complex, high-stakes matters where competent representation is otherwise unavailable.",
+          "cases_where_not_to_use": "Do not use unqualified volunteers for individualized legal advice.",
+          "confidence": "moderate",
+          "open_research_questions": [
+            "Randomized or phased-rollout evaluations",
+            "Quality and caseload thresholds",
+            "Client wellbeing"
+          ],
+          "primary_metric_ids": [
+            "I-M2"
+          ]
+        },
+        {
+          "intervention_id": "I-I4",
+          "name": "Trusted navigation and benefits enrollment",
+          "definition": "Use trained multilingual navigators to explain systems, schedule services, and connect eligible clients to public or community benefits.",
+          "theory_of_change": "Use trained multilingual navigators to explain systems, schedule services, and connect eligible clients to public or community benefits.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Successful enrollment, preventive care, benefit receipt, and reduced administrative burden.",
+          "key_study_ids": [
+            "IMM-01"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "Related community-health-worker evidence supports navigation, but immigrant-specific causal evidence and transfer across benefit rules are incomplete.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Current eligibility rules, privacy safeguards, warm handoffs, compensated bilingual staff, and legal referral boundaries.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Incorrect public-charge advice, privacy breaches, and referrals to inaccessible services can deter clients.",
+          "evidence_grade": "Promising",
+          "grade_rationale": "Promising: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "Low-risk administrative navigation with clear escalation to qualified counsel.",
+          "cases_where_not_to_use": "Do not let navigators make legal determinations outside authorization.",
+          "confidence": "moderate",
+          "open_research_questions": [
+            "Immigrant-specific randomized studies",
+            "Effects of changing eligibility rules and fear"
+          ],
+          "primary_metric_ids": [
+            "I-M2",
+            "I-M3"
+          ]
+        },
+        {
+          "intervention_id": "I-I5",
+          "name": "Information-only reminders for naturalization",
+          "definition": "Send texts, mail, or workshop invitations to encourage eligible residents to apply.",
+          "theory_of_change": "Send texts, mail, or workshop invitations to encourage eligible residents to apply.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Application initiation and filing over months.",
+          "key_study_ids": [
+            "IMM-02"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "Randomized nudges had no discernible effect among very-low-income people eligible for fee waivers, indicating deeper barriers.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Accurate multilingual content, consent for messaging, and a staffed pathway for complex questions.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Repeated messages can create privacy concerns or encourage filing without screening.",
+          "evidence_grade": "Weak",
+          "grade_rationale": "Weak: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "As a low-cost complement to substantive legal and financial support.",
+          "cases_where_not_to_use": "Do not substitute reminders for fee help, instruction, or legal screening.",
+          "confidence": "moderate",
+          "open_research_questions": [
+            "Which barrier-targeted messages work",
+            "Privacy-safe outreach"
+          ],
+          "primary_metric_ids": [
+            "I-M2"
+          ]
+        },
+        {
+          "intervention_id": "I-I6",
+          "name": "Unauthorized notario or nonlawyer legal advice",
+          "definition": "Provide individualized immigration advice or document selection through unlicensed and unaccredited providers.",
+          "theory_of_change": "Provide individualized immigration advice or document selection through unlicensed and unaccredited providers.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Filing errors, fraud losses, missed deadlines, removal exposure, and legal status outcomes.",
+          "key_study_ids": [
+            "IMM-05"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "Government warnings document serious, plausible, and sometimes irreversible harms; ethical constraints make randomized evaluation inappropriate.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "No implementation of unauthorized practice is acceptable; use attorneys or DOJ-recognized organizations and accredited representatives.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Fraud, false promises, disclosure of sensitive facts, missed relief, financial loss, and immigration consequences.",
+          "evidence_grade": "Potentially Harmful",
+          "grade_rationale": "Potentially Harmful: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "No recommended use.",
+          "cases_where_not_to_use": "Never describe notario/document-preparer advice as legal representation.",
+          "confidence": "high",
+          "open_research_questions": [
+            "Better prevalence and harm surveillance",
+            "Evaluation of fraud-prevention outreach"
+          ],
+          "primary_metric_ids": [
+            "I-M2"
+          ]
+        }
+      ],
+      "research_gaps": [
+        "Most integration services lack causal U.S. evaluations",
+        "Legal outcomes need quality-adjusted metrics, not filing counts",
+        "Limited evidence by status, language, disability, and rural location",
+        "Policy changes can rapidly invalidate applicability"
+      ],
+      "update_triggers": [
+        "Major systematic review or U.S. trial",
+        "Material harm signal",
+        "Policy or implementation change affecting applicability",
+        "Scheduled review date"
+      ],
+      "publication_guardrails": [
+        "Do not use to recommend a charity without a charity-specific applicability assessment.",
+        "Do not compare grades as if they were cost-effectiveness scores.",
+        "Separate participant wellbeing from government fiscal effects.",
+        "Strong and Potentially Harmful grades require second review before public reliance."
+      ]
+    },
+    {
+      "schema_version": "0.1.0",
+      "map_id": "evidence-map-drug-addiction",
+      "cause_area": "drug_addiction_treatment_harm_reduction",
+      "status": "draft_internal_not_for_charity_ranking",
+      "review_question": "For people who use drugs or have substance use disorders in the United States, which voluntary treatments and harm-reduction services reduce death and improve health, and which approaches create avoidable harm?",
+      "population_geography": "People who use drugs or meet criteria for substance use disorders in U.S. community, clinical, and justice settings.",
+      "search": {
+        "search_dates": [
+          "2026-06-12"
+        ],
+        "evidence_cutoff": "2026-06-12",
+        "repositories": [
+          "PubMed",
+          "Campbell Collaboration",
+          "U.S. federal evidence repositories",
+          "National Academies",
+          "targeted citation chaining"
+        ],
+        "search_strings": [
+          "cause area + intervention + systematic review",
+          "cause area + randomized evaluation",
+          "intervention + harm + United States"
+        ],
+        "inclusion_criteria": "Public systematic reviews, meta-analyses, randomized or credible quasi-experimental studies, government evaluations, and major implementation syntheses relevant to U.S. delivery.",
+        "exclusion_criteria": "Testimonials, charity marketing, uncontrolled output counts used as impact evidence, inaccessible claims without traceable citations, and studies with no relevant outcome.",
+        "screening_process": "Single-reviewer Phase 3 prototype with structured extraction; grades requiring Strong or Potentially Harmful receive mandatory second review before publication or recommendation use.",
+        "risk_of_bias_method": "Design, assignment, baseline balance, attrition, outcome validity, selective reporting, confounding, replication, and applicability assessed narratively under the evidence-grading method.",
+        "protocol_deviations": "This is a rapid single-reviewer prototype map, not a completed systematic review. Searches were targeted rather than exhaustive and no dual screening or formal meta-analysis was performed.",
+        "missing_literature_risks": "Publication bias, incomplete grey-literature capture, English-language bias, and fast-changing policy or drug-market contexts."
+      },
+      "reviewers": {
+        "lead": "Repository implementation prototype; named human reviewer pending",
+        "conflicts": "No charity-specific financial interests assessed in this phase.",
+        "outside_review_status": "Not yet externally reviewed",
+        "next_review_due": "2027-06-12"
+      },
+      "plain_language_summary": "This is not a charity recommendation. This map compares intervention categories, not charities. Grades describe the current direction and credibility of evidence; they are not rankings and do not establish marginal cost-effectiveness or room for more funding.",
+      "metrics": [
+        {
+          "metric_id": "D-M1",
+          "name": "All-cause and overdose mortality",
+          "unit": "deaths per 1,000 person-years",
+          "importance": "primary",
+          "notes": "Track induction, retention, and post-discontinuation periods."
+        },
+        {
+          "metric_id": "D-M2",
+          "name": "Treatment retention and use outcomes",
+          "unit": "retention, abstinent samples, use days",
+          "importance": "secondary",
+          "notes": "Do not require abstinence as the only valued outcome."
+        },
+        {
+          "metric_id": "D-M3",
+          "name": "Infectious and acute harms",
+          "unit": "HIV/HCV incidence, overdoses reversed, hospital use",
+          "importance": "primary",
+          "notes": "Measure reach and sterile-equipment coverage."
+        }
+      ],
+      "interventions": [
+        {
+          "intervention_id": "D-I1",
+          "name": "Methadone or buprenorphine treatment for opioid use disorder",
+          "definition": "Provide opioid agonist medication at adequate dose with retention-oriented clinical care.",
+          "theory_of_change": "Provide opioid agonist medication at adequate dose with retention-oriented clinical care.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "All-cause and overdose mortality, retention, illicit opioid use, and health over treatment and post-treatment periods.",
+          "key_study_ids": [
+            "DRG-01",
+            "DRG-02"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "Large meta-analyses show mortality is markedly lower in treatment than out of treatment; risk rises after cessation.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Low-barrier access, medication choice, adequate dose, continuity, respectful care, and overdose prevention at transitions.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Induction risk, forced taper, punitive discharge, and interrupted access can increase mortality.",
+          "evidence_grade": "Strong",
+          "grade_rationale": "Strong: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "People with OUD who choose medication, including during pregnancy and justice-system transitions with specialist guidance.",
+          "cases_where_not_to_use": "Do not use detoxification alone as equivalent treatment or force discontinuation after arbitrary duration.",
+          "confidence": "high",
+          "open_research_questions": [
+            "Fentanyl-era induction and retention",
+            "Best models for rural and polysubstance use"
+          ],
+          "primary_metric_ids": [
+            "D-M1",
+            "D-M2"
+          ]
+        },
+        {
+          "intervention_id": "D-I2",
+          "name": "Community overdose education and naloxone distribution",
+          "definition": "Place naloxone and practical overdose response training with people likely to witness an overdose.",
+          "theory_of_change": "Place naloxone and practical overdose response training with people likely to witness an overdose.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Overdose survival and community overdose mortality.",
+          "key_study_ids": [
+            "DRG-03"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "Systematic reviews find high successful reversal and growing population-level evidence of mortality reduction, though delivery intensity varies.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Saturation coverage, free or low-cost supply, refills, hands-on training, calling emergency services, and outreach to high-risk transitions.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Inadequate supply, expired kits, failure to account for potent synthetic opioids, and inequitable distribution.",
+          "evidence_grade": "Strong",
+          "grade_rationale": "Strong: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "People who use opioids, peers, families, shelters, libraries, and release or discharge settings.",
+          "cases_where_not_to_use": "Do not limit distribution to people who can prove abstinence or treatment enrollment.",
+          "confidence": "high",
+          "open_research_questions": [
+            "Optimal saturation thresholds",
+            "Rural and stimulant-contamination models"
+          ],
+          "primary_metric_ids": [
+            "D-M1",
+            "D-M3"
+          ]
+        },
+        {
+          "intervention_id": "D-I3",
+          "name": "Comprehensive syringe services programs",
+          "definition": "Provide sterile equipment, safe disposal, testing, vaccination, wound care, naloxone, and voluntary treatment linkage.",
+          "theory_of_change": "Provide sterile equipment, safe disposal, testing, vaccination, wound care, naloxone, and voluntary treatment linkage.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "HIV/HCV risk, injection practices, overdose response, treatment linkage, and community syringe disposal.",
+          "key_study_ids": [
+            "DRG-06"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "Convergent evidence and federal reviews support reduced infectious risk without evidence that SSPs increase drug use; comprehensive models provide broader benefits.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Adequate coverage, low-barrier hours, confidentiality, peer staff, disposal, testing, naloxone, and noncoercive treatment access.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Low coverage, police interference, stigma, and one-for-one restrictions can reduce effectiveness and safety.",
+          "evidence_grade": "Strong",
+          "grade_rationale": "Strong: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "Communities with injection-related risk, designed with people who use drugs.",
+          "cases_where_not_to_use": "Do not condition sterile equipment on treatment participation or abstinence.",
+          "confidence": "high",
+          "open_research_questions": [
+            "Fentanyl and xylazine-era outcomes",
+            "Comparative delivery and coverage models"
+          ],
+          "primary_metric_ids": [
+            "D-M1",
+            "D-M3"
+          ]
+        },
+        {
+          "intervention_id": "D-I4",
+          "name": "Contingency management for stimulant use disorder",
+          "definition": "Provide predictable incentives contingent on objectively verified behavior such as stimulant-negative samples or attendance.",
+          "theory_of_change": "Provide predictable incentives contingent on objectively verified behavior such as stimulant-negative samples or attendance.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Abstinence, attendance, and retention during treatment, with follow-up after incentives end.",
+          "key_study_ids": [
+            "DRG-04"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "A substantial trial literature supports contingency management as the most effective current behavioral intervention for stimulant use disorder, though durability varies.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Frequent testing, escalating incentives, immediate delivery, sufficient incentive value, anti-fraud controls, and respectful consent.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Underpowered incentives or delayed rewards reduce fidelity; punitive framing can undermine trust.",
+          "evidence_grade": "Strong",
+          "grade_rationale": "Strong: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "People with stimulant use disorder who choose an incentive-based program.",
+          "cases_where_not_to_use": "Do not redesign the incentive schedule so heavily that it no longer resembles tested models.",
+          "confidence": "moderate",
+          "open_research_questions": [
+            "Durability after incentives",
+            "Implementation under current payment rules",
+            "Effects on mortality"
+          ],
+          "primary_metric_ids": [
+            "D-M2"
+          ]
+        },
+        {
+          "intervention_id": "D-I5",
+          "name": "Overdose prevention / supervised consumption centers",
+          "definition": "Provide a supervised setting where people consume pre-obtained drugs, receive rapid overdose response, and can connect to health and social services.",
+          "theory_of_change": "Immediate observation prevents onsite overdose death and a trusted low-barrier setting can reduce risky use and connect participants to care.",
+          "target_population_and_setting": "People who use drugs, especially people who otherwise use alone or in public, in U.S. communities where legally and operationally feasible.",
+          "comparator": "No supervised facility, usual harm-reduction services, or areas and periods without access.",
+          "outcomes_and_timeframe": "Onsite overdose survival, public drug use, service linkage, neighborhood outcomes, and population-level overdose mortality.",
+          "key_study_ids": [
+            "DRG-07"
+          ],
+          "causal_strength_and_risk_of_bias": "Onsite overdose response is directly observed, but population-level effects rely on a small heterogeneous observational and quasi-experimental evidence base.",
+          "effect_size_range": "No reported onsite overdose deaths across long-running international services, but recent population-level mortality studies show mixed or null-to-protective associations depending on scale and coverage.",
+          "us_relevance_and_external_validity": "Most mature evidence is Canadian or international; U.S. legal context, fentanyl exposure, geography, and service saturation may change effects.",
+          "cost_resource_range": "Not standardized in Phase 3. Record facility, clinical and peer staffing, security, supplies, referral services, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Accessible location and hours, trained responders, ventilation and infection control, naloxone and oxygen, noncoercive referral, participant privacy, and community engagement.",
+          "scalability_equity_and_distribution": "Track who can reach and use the site, geographic coverage, policing around the site, disability access, race, housing status, and burdens or benefits to neighbors.",
+          "adverse_outcomes_and_harm_risk": "Low coverage may leave population mortality unchanged; surveillance, policing, stigma, or exclusionary site rules can deter the highest-risk users.",
+          "evidence_grade": "Mixed",
+          "grade_rationale": "Mixed: credible evidence supports onsite safety and service linkage, while population-level overdose mortality findings are inconsistent and U.S. applicability is limited.",
+          "recommended_use_cases": "As a carefully evaluated component of a broader low-barrier harm-reduction system, with transparent coverage and neighborhood measures.",
+          "cases_where_not_to_use": "Do not claim that one low-capacity site will measurably reduce citywide mortality or use police pressure to compel attendance.",
+          "confidence": "moderate",
+          "open_research_questions": [
+            "Population mortality effects at adequate coverage",
+            "U.S. fentanyl-era outcomes",
+            "Effects of inhalation services and mobile models"
+          ],
+          "primary_metric_ids": [
+            "D-M1",
+            "D-M3"
+          ]
+        },
+        {
+          "intervention_id": "D-I6",
+          "name": "Detoxification alone for opioid use disorder",
+          "definition": "Provide short-term withdrawal management without ongoing medication treatment or an assured continuation plan.",
+          "theory_of_change": "Provide short-term withdrawal management without ongoing medication treatment or an assured continuation plan.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Return to opioid use, overdose, treatment entry, and mortality after discharge.",
+          "key_study_ids": [
+            "DRG-02"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "CDC guidance warns detoxification alone is not recommended because return to use and overdose risk increase after tolerance falls.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "If withdrawal management occurs, initiate medication, provide naloxone, and arrange a confirmed continuing-care handoff.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Loss of tolerance followed by return to use can cause fatal overdose; discharge without care creates acute risk.",
+          "evidence_grade": "Potentially Harmful",
+          "grade_rationale": "Potentially Harmful: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "Only as a bridge into ongoing evidence-based treatment chosen by the patient.",
+          "cases_where_not_to_use": "Do not advertise completed detoxification as completion of OUD treatment.",
+          "confidence": "high",
+          "open_research_questions": [
+            "Comparative transition models",
+            "Risk by detoxification setting"
+          ],
+          "primary_metric_ids": [
+            "D-M1",
+            "D-M2"
+          ]
+        },
+        {
+          "intervention_id": "D-I7",
+          "name": "Compulsory or coercive drug detention/treatment",
+          "definition": "Mandate treatment or confinement primarily because of drug use, without meaningful consent and individualized clinical/legal safeguards.",
+          "theory_of_change": "Mandate treatment or confinement primarily because of drug use, without meaningful consent and individualized clinical/legal safeguards.",
+          "target_population_and_setting": "U.S. populations eligible for the intervention, with subgroup and local-system applicability checked before use.",
+          "comparator": "Usual services, no intervention, or the most credible alternative reported by included studies.",
+          "outcomes_and_timeframe": "Drug use, recidivism, mortality, rights violations, and treatment engagement after discharge.",
+          "key_study_ids": [
+            "DRG-05"
+          ],
+          "causal_strength_and_risk_of_bias": "Grade reflects the strongest applicable causal evidence and downgrades for bias, inconsistency, indirectness, or implementation variation.",
+          "effect_size_range": "A systematic review found no consistent benefit and some negative effects; coercive settings also present substantial rights and post-release risk.",
+          "us_relevance_and_external_validity": "Direct U.S. evidence is prioritized; transfer across populations and delivery systems remains an explicit uncertainty.",
+          "cost_resource_range": "Not standardized in Phase 3. Record direct program cost, participant time, public-system use, price year, and perspective in Phase 4.",
+          "implementation_requirements_and_fidelity_risks": "Prioritize voluntary care; any legally mandated pathway requires due process, evidence-based treatment, clinical independence, and continuity.",
+          "scalability_equity_and_distribution": "Track reach, take-up, exclusion, racial/ethnic disparities, disability access, rural access, and burdens on participants—not only average effects.",
+          "adverse_outcomes_and_harm_risk": "Abuse, forced labor or confinement, loss of tolerance, disengagement, and increased recidivism in some studies.",
+          "evidence_grade": "Potentially Harmful",
+          "grade_rationale": "Potentially Harmful: based on the cited evidence, with no automatic transfer of this grade to a charity.",
+          "recommended_use_cases": "No recommended charitable use for compulsory detention models.",
+          "cases_where_not_to_use": "Do not fund coercion as a substitute for accessible voluntary treatment.",
+          "confidence": "moderate",
+          "open_research_questions": [
+            "U.S.-specific comparative studies",
+            "Post-release mortality and rights outcomes"
+          ],
+          "primary_metric_ids": [
+            "D-M1",
+            "D-M2"
+          ]
+        }
+      ],
+      "research_gaps": [
+        "Need fentanyl/polysubstance-era comparative evidence",
+        "Mortality is rarely powered in behavioral trials",
+        "Service reach and retention must accompany efficacy",
+        "Harms and participant-defined wellbeing need routine measurement"
+      ],
+      "update_triggers": [
+        "Major systematic review or U.S. trial",
+        "Material harm signal",
+        "Policy or implementation change affecting applicability",
+        "Scheduled review date"
+      ],
+      "publication_guardrails": [
+        "Do not use to recommend a charity without a charity-specific applicability assessment.",
+        "Do not compare grades as if they were cost-effectiveness scores.",
+        "Separate participant wellbeing from government fiscal effects.",
+        "Strong and Potentially Harmful grades require second review before public reliance."
+      ]
+    }
+  ],
+  "study_catalog": [
+    {
+      "study_id": "HOM-01",
+      "title": "Baxter et al. (2019), Housing First systematic review and meta-analysis of RCTs",
+      "source_type": "systematic_review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30777888/",
+      "known_limitations": "Four RCTs; health estimates imprecise, housing and utilization outcomes more favorable.",
+      "appraisal_confidence": "moderate",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "HOM-02",
+      "title": "Peng et al. (2020), Community Guide review of permanent supportive housing with Housing First",
+      "source_type": "systematic_review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32732712/",
+      "known_limitations": "Twenty-six U.S. and Canadian comparative studies; program models and outcomes vary.",
+      "appraisal_confidence": "high",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "HOM-03",
+      "title": "HUD Family Options Study, three-year impacts",
+      "source_type": "randomized_evaluation",
+      "url": "https://www.huduser.gov/portal/sites/default/files/pdf/family-options-study-full-report.pdf",
+      "known_limitations": "Large U.S. family study; applies to families in emergency shelter, not all homeless populations.",
+      "appraisal_confidence": "high",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "HOM-04",
+      "title": "Centre for Homelessness Impact effectiveness evidence and gap map",
+      "source_type": "evidence_gap_map",
+      "url": "https://www.homelessnessimpact.org/publication/evidence-and-gap-maps-effectiveness-v3",
+      "known_limitations": "Broad international map; evidence concentration does not itself establish effectiveness.",
+      "appraisal_confidence": "moderate",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "REE-01",
+      "title": "Beaudry et al. (2021), psychological interventions in prison meta-analysis",
+      "source_type": "systematic_review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34419185/",
+      "known_limitations": "RCT synthesis; intervention types, settings, and risk of bias vary.",
+      "appraisal_confidence": "high",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "REE-02",
+      "title": "Campbell review of cognitive-behavioral programs for criminal offenders",
+      "source_type": "systematic_review",
+      "url": "https://www.campbellcollaboration.org/review/criminal-offenders-cognitive-behavioural-programmes/",
+      "known_limitations": "Older synthesis through 2004; implementation quality moderates effects.",
+      "appraisal_confidence": "moderate",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "REE-03",
+      "title": "NIJ review of returning-offender programs and promising practices",
+      "source_type": "government_evidence_review",
+      "url": "https://nij.ojp.gov/redirect-legacy/about/director/Pages/muhlhausen-research-on-returning-offender-programs-and-promising-practices.aspx",
+      "known_limitations": "Narrative synthesis emphasizing limited replication and mixed employment-program results.",
+      "appraisal_confidence": "moderate",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "REE-04",
+      "title": "NIJ, Ex-Offender Job Placement Programs Do Not Reduce Recidivism",
+      "source_type": "government_evidence_review",
+      "url": "https://nij.ojp.gov/library/publications/ex-offender-job-placement-programs-do-not-reduce-recidivism",
+      "known_limitations": "Brief review; employment benefits and recidivism effects must be separated.",
+      "appraisal_confidence": "moderate",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "REE-05",
+      "title": "Petrosino et al., Scared Straight review",
+      "source_type": "systematic_review",
+      "url": "https://ojp.gov/library/publications/scared-straight-and-other-juvenile-awareness-programs-prevention-juvenile",
+      "known_limitations": "Trials are older, but direction of harmful effect is consistent enough to reject use.",
+      "appraisal_confidence": "high",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "REE-06",
+      "title": "RAND correctional education meta-analysis",
+      "source_type": "systematic_review",
+      "url": "https://www.rand.org/content/dam/rand/pubs/research_reports/RR200/RR266/RAND_RR266.pdf",
+      "known_limitations": "Mostly quasi-experimental evidence; selection and program heterogeneity remain.",
+      "appraisal_confidence": "moderate",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "CJ-01",
+      "title": "Braga et al. (2019), hot spots policing systematic review",
+      "source_type": "systematic_review",
+      "url": "https://www.ojp.gov/library/publications/hot-spots-policing-and-crime-reduction-update-ongoing-systematic-review-and",
+      "known_limitations": "Large mostly U.S. evidence base; tactics within hot spots differ materially.",
+      "appraisal_confidence": "high",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "CJ-02",
+      "title": "National Academies (2018), Proactive Policing: Effects on Crime and Communities",
+      "source_type": "consensus_report",
+      "url": "https://nap.nationalacademies.org/catalog/24928/proactive-policing-effects-on-crime-and-communities",
+      "known_limitations": "Consensus synthesis; community and long-run outcomes less studied than crime.",
+      "appraisal_confidence": "high",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "CJ-03",
+      "title": "Petersen et al. (2023), police stops systematic review and meta-analysis",
+      "source_type": "systematic_review",
+      "url": "https://nij.ojp.gov/library/publications/police-stops-reduce-crime-systematic-review-and-meta-analysis",
+      "known_limitations": "Finds place-level crime effects alongside adverse individual effects.",
+      "appraisal_confidence": "high",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "CJ-04",
+      "title": "CrimeSolutions practice profile: Hot Spots Policing",
+      "source_type": "government_evidence_review",
+      "url": "https://crimesolutions.ojp.gov/ratedpractices/hot-spots-policing",
+      "known_limitations": "Transparent profile of 65 studies; does not imply every tactic is beneficial.",
+      "appraisal_confidence": "high",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "CJ-05",
+      "title": "Campbell review of restorative justice conferencing",
+      "source_type": "systematic_review",
+      "url": "https://nij.ojp.gov/library/publications/are-restorative-justice-conferences-effective-reducing-repeat-offending",
+      "known_limitations": "Eligible participants and voluntary, well-facilitated models limit generalization.",
+      "appraisal_confidence": "moderate",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "IMM-01",
+      "title": "Heller and Mumma (2023), randomized adult English training evaluation",
+      "source_type": "randomized_evaluation",
+      "url": "https://www.aeaweb.org/articles?id=10.1257%2Fpol.20210336",
+      "known_limitations": "One Massachusetts program with lottery applicants; strong internal but limited external validity.",
+      "appraisal_confidence": "high",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "IMM-02",
+      "title": "Hainmueller et al. (2018), randomized naturalization fee-voucher study",
+      "source_type": "randomized_evaluation",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5798346/",
+      "known_limitations": "New York registrants already interested in naturalization; application is an intermediate outcome.",
+      "appraisal_confidence": "high",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "IMM-03",
+      "title": "Hainmueller et al. (2019), standardized fee-waiver application study",
+      "source_type": "quasi_experimental",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6708319/",
+      "known_limitations": "National policy discontinuity supports causal inference but relies on administrative assumptions.",
+      "appraisal_confidence": "moderate",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "IMM-04",
+      "title": "Eagly and Shafer, national study of access to counsel in immigration court",
+      "source_type": "observational_study",
+      "url": "https://legalaidresearch.org/wp-content/uploads/2020/02/national-study-of-acces-to-counsel-immigration-eagly-shafer-2-15.pdf",
+      "known_limitations": "Large national administrative study; representation is not randomly assigned.",
+      "appraisal_confidence": "moderate",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "IMM-05",
+      "title": "USCIS, Avoid Immigration Scams",
+      "source_type": "government_guidance",
+      "url": "https://www.uscis.gov/avoid-scams",
+      "known_limitations": "Documents recognized risks and authorized-provider rules; not an impact evaluation.",
+      "appraisal_confidence": "high",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "DRG-01",
+      "title": "Sordo et al. (2017), mortality during and after opioid substitution treatment",
+      "source_type": "systematic_review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28446428/",
+      "known_limitations": "Large cohort meta-analysis; nonrandom treatment entry can leave confounding.",
+      "appraisal_confidence": "high",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "DRG-02",
+      "title": "CDC clinical guidance for treating opioid use disorder",
+      "source_type": "government_guidance",
+      "url": "https://www.cdc.gov/overdose-prevention/hcp/clinical-care/opioid-use-disorder-treating.html",
+      "known_limitations": "Evidence-based guidance; not itself a primary effect estimate.",
+      "appraisal_confidence": "high",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "DRG-03",
+      "title": "Fischer et al. (2025), community naloxone distribution meta-analysis",
+      "source_type": "systematic_review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40133970/",
+      "known_limitations": "Community evidence includes heterogeneous designs and fentanyl-era changes.",
+      "appraisal_confidence": "high",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "DRG-04",
+      "title": "Brown and DeFulio (2020), contingency management for methamphetamine use disorder systematic review",
+      "source_type": "systematic_review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33007699/",
+      "known_limitations": "Twenty-seven heterogeneous studies; most outcomes concern abstinence during treatment and durability is less certain.",
+      "appraisal_confidence": "high",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "DRG-05",
+      "title": "Werb et al. (2016), compulsory drug treatment systematic review",
+      "source_type": "systematic_review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26790691/",
+      "known_limitations": "Only nine heterogeneous studies, several outside the U.S.; harm and rights concerns remain material.",
+      "appraisal_confidence": "moderate",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "DRG-06",
+      "title": "CDC evidence-based strategies for preventing opioid overdose",
+      "source_type": "government_evidence_review",
+      "url": "https://www.cdc.gov/overdose-prevention/media/pdfs/2024/03/Evidence-based-strategies-for-prevention-of-opioid-overdose.pdf",
+      "known_limitations": "Strategy synthesis; local SSP packages and legal settings vary.",
+      "appraisal_confidence": "high",
+      "retrieval_date": "2026-06-12"
+    },
+    {
+      "study_id": "DRG-07",
+      "title": "Gariépy et al. (2025), supervised consumption sites and population-level overdose mortality",
+      "source_type": "systematic_review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40960731/",
+      "known_limitations": "Six studies, all Canadian; population-level mortality findings are inconsistent and service coverage varies.",
+      "appraisal_confidence": "high",
+      "retrieval_date": "2026-06-12"
+    }
+  ]
+}
